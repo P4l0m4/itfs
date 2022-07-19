@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "~ress/dist/ress.min.css";
+//A VIRER :
+@import "@/styles/_variables.scss";
+//
+@font-face {
+  font-family: "Anurati";
+  src: url("@/styles/anurati-font/Anurati-Regular.otf");
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a,
+p,
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+  color: $tertiary-color;
+}
+
+#app {
+  background: rgb(30, 30, 30);
+  background: linear-gradient(
+    180deg,
+    rgba(30, 30, 30, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  width: 100vw;
+  height: 100vh;
+}
