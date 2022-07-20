@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <form class="form" @submit.prevent="submit">
+    <form class="form" ref="form" @submit.prevent="submit">
       <!-- CHAMP NOM -->
       <div
         class="form__group"
@@ -10,6 +10,7 @@
         <input
           class="form__group__input"
           placeholder="Michel"
+          name="name"
           v-model.trim="name"
         />
 
@@ -25,8 +26,6 @@
         <div class="form__error" v-if="$v.name.$error && !$v.name.alpha">
           Ce champ ne peut contenir que des lettres
         </div>
-
-        <p class="form__error" v-if="isSubmitting">Sending...</p>
       </div>
       <!-- CHAMP PRENOM -->
       <div
@@ -37,6 +36,7 @@
         <input
           class="form__group__input"
           placeholder="Dupont"
+          name="firstName"
           v-model.trim="firstName"
         />
 
@@ -61,8 +61,6 @@
         >
           Ce champ ne peut contenir que des lettres
         </div>
-
-        <p class="form__error" v-if="isSubmitting">Sending...</p>
       </div>
 
       <!-- CHAMP EMAIL -->
@@ -74,20 +72,17 @@
         <input
           class="form__group__input"
           placeholder="michel.dupont@gmail.com"
+          name="email"
           v-model.trim="email"
         />
 
         <div class="form__error" v-if="$v.email.$error && !$v.email.required">
           Ce champ est requis
         </div>
-        <div class="form__error" v-if="$v.email.$error && !$v.email.minLength">
-          Minimum de caractères : {{ $v.email.$params.minLength.min }}
-        </div>
-        <div class="form__error" v-if="$v.email.$error && !$v.email.maxLength">
-          Maximum de caractères : {{ $v.email.$params.maxLength.max }}
-        </div>
 
-        <p class="form__error" v-if="isSubmitting">Sending...</p>
+        <div class="form__error" v-else-if="$v.email.$error && !$v.email.eùaom">
+          Veuillez renseigner un email valide
+        </div>
       </div>
 
       <!-- CHAMP MESSAGE -->
@@ -99,6 +94,7 @@
         <textarea
           class="form__group__textarea"
           placeholder="Bonjour..."
+          name="message"
           v-model.trim="message"
         />
 
@@ -122,8 +118,6 @@
           Minimum de caractères :
           {{ $v.message.$params.maxLength.max }}
         </div>
-
-        <p class="form__error" v-if="isSubmitting">Sending...</p>
       </div>
 
       <!-- CHAMP RGPD -->
@@ -136,12 +130,13 @@
             type="checkbox"
             class="form__group__input"
             v-model.trim="rgpd"
+            id="rgpd"
           />
-          <p class="form__group__checkbox-container__text">
+          <label for="rgpd" class="form__group__checkbox-container__text">
             Vous acceptez que les informations saisies dans ce formulaire soient
             transmises par mail à Informatique Technologie Formation Savoie
             (ITFS).
-          </p>
+          </label>
         </div>
         <div class="form__error" v-if="$v.rgpd.$error && !$v.email.sameAs">
           Ce champ est requis
@@ -150,7 +145,7 @@
       <button class="form__button" type="submit" :disabled="isSubmitting">
         Envoyer
       </button>
-      <p class="form__error" v-if="isSubmitting">Sending...</p>
+      <p class="form__error" v-if="isSubmitting">Message envoyé</p>
     </form>
   </div>
 </template>
@@ -164,6 +159,7 @@ import {
   sameAs,
   alpha,
 } from "vuelidate/lib/validators";
+import emailjs from "@emailjs/browser";
 
 export default {
   data() {
@@ -191,8 +187,6 @@ export default {
     },
     email: {
       required,
-      minLength: minLength(4),
-      maxLength: maxLength(40),
       email,
     },
     message: {
@@ -205,18 +199,25 @@ export default {
     },
   },
   methods: {
-    submit() {
+    async submit() {
       console.log("submit!");
       this.$v.$touch();
-      // if (this.$v.$invalid) {
-      //   this.submitStatus = "ERROR";
-      // } else {
-      //   // do your submit logic here
-      //   this.submitStatus = "PENDING";
-      //   setTimeout(() => {
-      //     this.submitStatus = "OK";
-      //   }, 500);
-      // }
+
+      if (!this.$v.$invalid) {
+        await emailjs.sendForm(
+          "service_f0ns79q",
+          "template_w7w5617",
+          this.$refs.form,
+          "ZAG2PeOHvH8fTwjpW"
+        );
+        this.isSubmitting = false;
+        this.name = "";
+        this.firstName = "";
+        this.email = "";
+        this.message = "";
+        this.rgpd = false;
+        this.$v.$reset();
+      }
     },
   },
 };
@@ -255,10 +256,11 @@ export default {
         &::placeholder {
           color: $secondary-color;
           font-weight: $light-weight;
+          opacity: 0.4;
         }
         &[type="checkbox"] {
-          width: 100px;
-          height: 40px;
+          width: 50px;
+          height: 20px;
           cursor: pointer;
           accent-color: $secondary-color;
         }
