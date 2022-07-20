@@ -12,21 +12,12 @@ export default {
 };
 </script>
 <style scoped lang="scss">
-//A VIRER :
-@import "@/styles/_variables.scss";
-//
-
 .footer {
-  font-weight: $thin;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
+  font-weight: $light-weight;
   display: flex;
   width: 100vw;
   justify-content: space-between;
-  padding: 12px 16px;
+  padding: 10px 16px;
 
   @media (min-width: $tablet) {
     justify-content: flex-end;
@@ -34,6 +25,7 @@ export default {
   }
   &__link {
     text-decoration: underline;
+    color: $tertiary-color;
   }
 }
 </style>

@@ -1,22 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import "~ress/dist/ress.min.css";
-//A VIRER :
-@import "@/styles/_variables.scss";
-//
 @font-face {
   font-family: "Anurati";
   src: url("@/styles/anurati-font/Anurati-Regular.otf");
 }
-html {
+html,
+body {
   scroll-behavior: smooth;
-}
-
-a,
-p,
-h1,
-h2 {
   font-family: "Poppins", sans-serif;
   color: $tertiary-color;
+  overflow-x: hidden;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+  border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1e1e1e;
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2b2b2b;
+}
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #1e1e1e inset !important;
+}
+
+/*Change text in autofill textbox*/
+input:-webkit-autofill {
+  -webkit-text-fill-color: $secondary-color !important;
 }
 
 #app {

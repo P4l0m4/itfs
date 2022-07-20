@@ -3,6 +3,8 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import "@/styles/global.scss";
+import Vuelidate from "vuelidate";
+Vue.use(Vuelidate);
 
 Vue.config.productionTip = false;
 
