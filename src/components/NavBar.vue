@@ -29,8 +29,10 @@
 
     <nav class="nav-desktop">
       <router-link to="/"
-        ><canvas class="nav-desktop__logo"></canvas
-      ></router-link>
+        ><LogoThreejs />
+        <!-- <canvas class="nav-desktop__logo"></canvas
+      > -->
+      </router-link>
       <router-link class="nav-desktop__link" to="/" exact>Accueil</router-link>
       <router-link class="nav-desktop__link" to="/prestations" exact
         >Prestations</router-link
@@ -45,6 +47,7 @@
   </div>
 </template>
 <script>
+import LogoThreejs from "@/components/LogoThreejs.vue";
 export default {
   name: "NavBar",
   props: {
@@ -53,6 +56,9 @@ export default {
     //   required: true,
     //   default: false,
     // },
+  },
+  components: {
+    LogoThreejs,
   },
   methods: {
     // toggle() {

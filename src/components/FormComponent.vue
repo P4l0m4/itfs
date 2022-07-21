@@ -162,6 +162,7 @@ import {
 import emailjs from "@emailjs/browser";
 
 export default {
+  name: "FormComponent",
   data() {
     return {
       name: "",
@@ -231,10 +232,13 @@ export default {
   background-color: $primary-color;
 
   .form {
-    width: clamp(300px, 100%, 450px);
+    width: clamp(300px, 100%, 400px);
     gap: 16px;
     display: flex;
     flex-direction: column;
+    @media (min-width: $tablet) {
+      gap: 24px;
+    }
 
     &__group {
       position: relative;
