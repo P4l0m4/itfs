@@ -152,9 +152,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.webgl {
-  width: 100px !important;
-  height: 100px !important;
-}
-</style>
+<style lang="scss" scoped></style>

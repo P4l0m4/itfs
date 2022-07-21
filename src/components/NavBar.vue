@@ -29,7 +29,7 @@
 
     <nav class="nav-desktop">
       <router-link to="/"
-        ><LogoThreejs />
+        ><LogoThreejs class="nav-desktop__logo" />
         <!-- <canvas class="nav-desktop__logo"></canvas
       > -->
       </router-link>
@@ -118,9 +118,8 @@ export default {
   }
 
   &__logo {
-    border: orange solid 2px;
-    width: 60px;
-    height: 60px;
+    width: 100px !important;
+    height: 100px !important;
     @media (min-width: 424px) {
       display: none;
     }

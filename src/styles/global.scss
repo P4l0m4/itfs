@@ -45,14 +45,34 @@ input:-webkit-autofill:active {
 input:-webkit-autofill {
   -webkit-text-fill-color: $secondary-color !important;
 }
-
-#app {
-  background: rgb(30, 30, 30);
+.carousel-3d-slide {
+  border: 2px $primary-color solid;
+  background: rgb(236, 159, 5);
   background: linear-gradient(
-    180deg,
-    rgba(30, 30, 30, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
+    90deg,
+    rgba(236, 159, 5, 1) 0%,
+    rgba(236, 86, 5, 1) 100%
   );
-  width: 100vw;
-  height: 100vh;
+  .slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 64px;
+    gap: 24px;
+    cursor: pointer;
+
+    &__line {
+      height: 100%;
+      width: 2px;
+      background-color: $tertiary-color;
+    }
+    &__text {
+      font-size: 20px;
+      line-height: 30px;
+      text-transform: uppercase;
+      height: 150px;
+    }
+  }
 }

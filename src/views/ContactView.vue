@@ -16,6 +16,7 @@ export default {
 <style lang="scss">
 .container {
   width: 100vw;
+  height: 100vh;
   gap: 32px;
   padding: 64px 16px;
   display: flex;
