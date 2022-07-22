@@ -6,6 +6,46 @@
     <ContactView />
     <AProposView />
     <FooterComponent />
+
+    <!-- VERTICAL SLIDER left -->
+    <div class="vertical-slider">
+      <div class="vertical-slider__line"></div>
+      <div class="vertical-slider__track">
+        <div class="vertical-slider__dot">
+          <p class="vertical-slider__dot__text">Lorem ipsum</p>
+          <div class="vertical-slider__dot__circle"></div>
+        </div>
+        <div class="vertical-slider__dot">
+          <p class="vertical-slider__dot__text">Lorem ipsum</p>
+          <div class="vertical-slider__dot__circle"></div>
+        </div>
+        <div class="vertical-slider__dot">
+          <p class="vertical-slider__dot__text">Lorem ipsum</p>
+          <div class="vertical-slider__dot__circle"></div>
+        </div>
+        <div class="vertical-slider__dot">
+          <p class="vertical-slider__dot__text">Lorem ipsum</p>
+          <div class="vertical-slider__dot__circle"></div>
+        </div>
+        <div class="vertical-slider__dot">
+          <p class="vertical-slider__dot__text">Lorem ipsum</p>
+          <div class="vertical-slider__dot__circle"></div>
+        </div>
+        <div class="vertical-slider__dot">
+          <p class="vertical-slider__dot__text">Lorem ipsum</p>
+          <div class="vertical-slider__dot__circle"></div>
+        </div>
+        <div class="vertical-slider__dot">
+          <p class="vertical-slider__dot__text">Lorem ipsum</p>
+          <div class="vertical-slider__dot__circle"></div>
+        </div>
+        <div class="vertical-slider__dot">
+          <p class="vertical-slider__dot__text">Lorem ipsum</p>
+          <div class="vertical-slider__dot__circle"></div>
+        </div>
+      </div>
+    </div>
+    <!-- VERTICAL SLIDER right -->
     <div class="vertical-slider">
       <div class="vertical-slider__line"></div>
       <div class="vertical-slider__track">
@@ -78,12 +118,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 #app {
-  background: rgb(30, 30, 30);
-  background: linear-gradient(
-    180deg,
-    rgba(30, 30, 30, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
   width: 100vw;
   height: 100vh;
 }
@@ -98,6 +132,11 @@ export default {
   top: 0;
   left: 100px;
   display: none;
+  &:nth-of-type(2) {
+    top: 0;
+    right: 100px;
+    border: brown solid 5px;
+  }
   @media (min-width: $desktop) {
     display: block;
   }

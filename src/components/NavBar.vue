@@ -1,47 +1,75 @@
 <template>
   <div>
     <nav class="nav-mobile">
-      <router-link class="nav-mobile__link" to="/" exact
-        ><img
-          class="nav-mobile__link__icon"
-          src="@/assets/home.svg"
-        />Accueil</router-link
+      <a
+        class="nav-mobile__link"
+        href="#accueil"
+        :class="{ 'nav-mobile__link--active': link === 'accueil' }"
+        @click="link = 'accueil'"
       >
-      <router-link class="nav-mobile__link" to="/prestations" exact
+        <img class="nav-mobile__link__icon" src="@/assets/home.svg" />Accueil</a
+      >
+      <a
+        class="nav-mobile__link"
+        href="#prestations"
+        :class="{ 'nav-mobile__link--active': link === 'prestations' }"
+        @click="link = 'prestations'"
         ><img
           class="nav-mobile__link__icon"
           src="@/assets/school-outline.svg"
-        />Prestations</router-link
+        />Prestations</a
       >
-      <router-link class="nav-mobile__link" to="/contact" exact
+      <a
+        class="nav-mobile__link"
+        href="#contact"
+        :class="{ 'nav-mobile__link--active': link === 'contact' }"
+        @click="link = 'contact'"
         ><img
           class="nav-mobile__link__icon"
           src="@/assets/send-outline.svg"
-        />Contact</router-link
+        />Contact</a
       >
-      <router-link class="nav-mobile__link" to="/a-propos" exact
+      <a
+        class="nav-mobile__link"
+        href="#a-propos"
+        :class="{ 'nav-mobile__link--active': link === 'a-propos' }"
+        @click="link = 'a-propos'"
         ><img
           class="nav-mobile__link__icon"
           src="@/assets/information-outline.svg"
-        />A propos</router-link
+        />A propos</a
       >
     </nav>
 
     <nav class="nav-desktop">
-      <router-link to="/"
-        ><LogoThreejs class="nav-desktop__logo" />
-        <!-- <canvas class="nav-desktop__logo"></canvas
-      > -->
-      </router-link>
-      <router-link class="nav-desktop__link" to="/" exact>Accueil</router-link>
-      <router-link class="nav-desktop__link" to="/prestations" exact
-        >Prestations</router-link
+      <a href="#accueil"><LogoThreejs class="nav-desktop__logo" /> </a>
+      <a
+        class="nav-desktop__link"
+        href="#accueil"
+        :class="{ 'nav-desktop__link--active': link === 'accueil' }"
+        @click="link = 'accueil'"
+        >Accueil</a
       >
-      <router-link class="nav-desktop__link" to="/contact" exact
-        >Contact</router-link
+      <a
+        class="nav-desktop__link"
+        href="#prestations"
+        :class="{ 'nav-desktop__link--active': link === 'prestations' }"
+        @click="link = 'prestations'"
+        >Prestations</a
       >
-      <router-link class="nav-desktop__link" to="/a-propos" exact
-        >A propos</router-link
+      <a
+        class="nav-desktop__link"
+        href="#contact"
+        :class="{ 'nav-desktop__link--active': link === 'contact' }"
+        @click="link = 'contact'"
+        >Contact</a
+      >
+      <a
+        class="nav-desktop__link"
+        href="#a-propos"
+        :class="{ 'nav-desktop__link--active': link === 'a-propos' }"
+        @click="link = 'a-propos'"
+        >A propos</a
       >
     </nav>
   </div>
@@ -57,6 +85,12 @@ export default {
     //   default: false,
     // },
   },
+  data() {
+    return {
+      link: "accueil",
+    };
+  },
+
   components: {
     LogoThreejs,
   },
@@ -91,13 +125,13 @@ export default {
     flex-direction: column;
     color: $tertiary-color;
     align-items: center;
+    &--active {
+      color: darken($tertiary-color, 40%);
+    }
 
     &__icon {
       width: 44px;
     }
-  }
-  .router-link-exact-active {
-    color: darken($tertiary-color, 40%);
   }
 }
 .nav-desktop {
@@ -113,7 +147,6 @@ export default {
     gap: 16px;
   }
   @media (min-width: $desktop) {
-    display: flex;
     gap: 24px;
   }
 
@@ -133,9 +166,9 @@ export default {
     font-size: 20px;
     border-bottom: 2px solid transparent;
     color: $tertiary-color;
-  }
-  .router-link-exact-active {
-    color: darken($tertiary-color, 40%);
+    &--active {
+      color: darken($tertiary-color, 40%);
+    }
   }
 }
 </style>

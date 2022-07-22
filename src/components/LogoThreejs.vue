@@ -77,14 +77,16 @@ export default {
        * Sizes
        */
       const sizes = {
-        width: window.innerWidth * 0.5,
-        height: window.innerHeight,
+        // width: window.innerWidth * 0.8,
+        // height: window.innerHeight,
+        width: 200,
+        height: 200,
       };
 
       window.addEventListener("resize", () => {
         // Update sizes
-        sizes.width = window.innerWidth;
-        sizes.height = window.innerHeight;
+        // sizes.width = window.innerWidth * 0.8;
+        // sizes.height = window.innerHeight;
 
         // Update camera
         camera.aspect = sizes.width / sizes.height;

@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" id="prestations">
     <!-- CAROUSEL ALLERGIQUE AU DISPLAY FLEX ET GRID -->
     <div class="carousel-mobile">
       <CarouselMobile />
@@ -32,7 +32,6 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: rgb(43, 255, 0) solid 2px;
 }
 .carousel-mobile {
   width: 100%;

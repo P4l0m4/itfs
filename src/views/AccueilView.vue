@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="accueil">
     <ParticlesComponent />
   </div>
 </template>

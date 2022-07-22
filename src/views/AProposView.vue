@@ -1,3 +1,3 @@
 <template>
-  <div></div>
+  <div id="a-propos"></div>
 </template>

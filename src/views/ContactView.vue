@@ -23,6 +23,5 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: red solid 2px;
 }
 </style>
