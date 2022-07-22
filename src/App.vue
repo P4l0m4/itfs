@@ -47,8 +47,8 @@
     </div>
     <!-- VERTICAL SLIDER right -->
     <div class="vertical-slider">
-      <div class="vertical-slider__line"></div>
-      <div class="vertical-slider__track">
+      <div class="vertical-slider__line line2"></div>
+      <div class="vertical-slider__track track2">
         <div class="vertical-slider__dot">
           <p class="vertical-slider__dot__text">Lorem ipsum</p>
           <div class="vertical-slider__dot__circle"></div>
@@ -149,12 +149,6 @@ export default {
     top: 0;
     left: 170px;
     margin: auto;
-    &:nth-of-type(2) {
-      top: 0;
-      right: 170px;
-      left: inherit;
-      border: purple solid 2px;
-    }
   }
 
   &__track {
@@ -165,14 +159,8 @@ export default {
     flex-direction: column;
     gap: 600px;
     animation: slide 80s linear infinite;
-    &:nth-of-type(2n) {
-      animation-delay: 4s;
-      border: yellow solid 2px;
-    }
 
     @keyframes slide {
-      from {
-      }
       to {
         transform: translateY(-2633.6px);
         // 600*4 + 58.4*4
@@ -196,6 +184,21 @@ export default {
     &__text {
       font-weight: 100;
       font-size: 20px;
+    }
+  }
+}
+.line2 {
+  top: 0;
+  right: 170px;
+  left: unset;
+}
+.track2 {
+  gap: 800px;
+  animation: slide2 200s linear infinite;
+  @keyframes slide2 {
+    to {
+      transform: translateY(-3993.6px);
+      // 940*4 + 58.4*4
     }
   }
 }
