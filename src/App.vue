@@ -132,10 +132,10 @@ export default {
   top: 0;
   left: 100px;
   display: none;
-  &:nth-of-type(2) {
+  &:nth-of-type(2n) {
     top: 0;
     right: 100px;
-    border: brown solid 5px;
+    left: inherit;
   }
   @media (min-width: $desktop) {
     display: block;
@@ -149,6 +149,12 @@ export default {
     top: 0;
     left: 170px;
     margin: auto;
+    &:nth-of-type(2) {
+      top: 0;
+      right: 170px;
+      left: inherit;
+      border: purple solid 2px;
+    }
   }
 
   &__track {
@@ -159,6 +165,10 @@ export default {
     flex-direction: column;
     gap: 600px;
     animation: slide 80s linear infinite;
+    &:nth-of-type(2n) {
+      animation-delay: 4s;
+      border: yellow solid 2px;
+    }
 
     @keyframes slide {
       from {

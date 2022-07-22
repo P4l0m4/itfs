@@ -19,6 +19,13 @@ body {
     rgba(0, 0, 0, 1) 100%
   );
 }
+h2 {
+  font-size: 20px;
+  font-weight: $medium-weight;
+  border-bottom: 2px solid $tertiary-color;
+  width: 100%;
+  padding-bottom: 8px;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 8px;
