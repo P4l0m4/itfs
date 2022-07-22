@@ -5,22 +5,22 @@
       <h2>Contacter ITFS</h2>
       <ul>
         <li>
-          Poppins ExtraLight 16px Poppins ExtraLight 16px Poppins ExtraLight
+          Poppins Extra Light 16px Poppins ExtraLight 16px Poppins Extra Light
         </li>
         <li>
-          Poppins ExtraLight 16px Poppins ExtraLight 16px Poppins ExtraLight
+          Poppins Extra Light 16px Poppins Extra Light 16px Poppins Extra Light
         </li>
         <li>
-          Poppins ExtraLight 16px Poppins ExtraLight 16px Poppins ExtraLight
+          Poppins Extra Light 16px Poppins Extra Light 16px Poppins Extra Light
         </li>
         <li>
-          Poppins ExtraLight 16px Poppins ExtraLight 16px Poppins ExtraLight
+          Poppins Extra Light 16px Poppins Extra Light 16px Poppins Extra Light
         </li>
         <li>
-          Poppins ExtraLight 16px Poppins ExtraLight 16px Poppins ExtraLight
+          Poppins Extra Light 16px Poppins Extra Light 16px Poppins Extra Light
         </li>
         <li>
-          Poppins ExtraLight 16px Poppins ExtraLight 16px Poppins ExtraLight
+          Poppins Extra Light 16px Poppins Extra Light 16px Poppins Extra Light
         </li>
       </ul>
     </div>

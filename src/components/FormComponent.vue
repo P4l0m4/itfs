@@ -311,6 +311,15 @@ export default {
       border-radius: $border-radius;
       color: $tertiary-color;
       font-weight: $button-weight;
+      position: relative;
+      transition: background 0.4s linear;
+      &:hover {
+        background: linear-gradient(
+          90deg,
+          rgba(236, 159, 5, 1) 40%,
+          rgba(236, 86, 5, 1) 100%
+        );
+      }
     }
 
     &__error {

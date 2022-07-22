@@ -22,9 +22,9 @@ body {
 h2 {
   font-size: 20px;
   font-weight: $medium-weight;
-  border-bottom: 2px solid $tertiary-color;
-  width: 100%;
+  border-bottom: 4px solid $tertiary-color;
   padding-bottom: 8px;
+  width: fit-content;
 }
 /* width */
 ::-webkit-scrollbar {

@@ -130,11 +130,11 @@ export default {
   overflow: hidden;
   position: fixed;
   top: 0;
-  left: 100px;
+  left: 80px;
   display: none;
   &:nth-of-type(2n) {
     top: 0;
-    right: 100px;
+    right: 80px;
     left: inherit;
   }
   @media (min-width: $desktop) {
@@ -147,7 +147,7 @@ export default {
     height: 100vh;
     position: fixed;
     top: 0;
-    left: 170px;
+    left: 150px;
     margin: auto;
   }
 
@@ -189,8 +189,9 @@ export default {
 }
 .line2 {
   top: 0;
-  right: 170px;
+  right: 150px;
   left: unset;
+  width: 0.6px;
 }
 .track2 {
   gap: 800px;

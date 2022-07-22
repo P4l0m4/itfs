@@ -8,7 +8,10 @@
       <CarouselDesktop />
     </div>
 
-    <a class="button" href="#contact">Contacter ITFS</a>
+    <a class="button" href="#contact"
+      >Contacter ITFS
+      <div class="button__frame"></div
+    ></a>
   </div>
 </template>
 
@@ -25,37 +28,51 @@ export default {
 </script>
 <style lang="scss" scoped>
 .container {
-  width: 100vw;
+  width: 100%;
   gap: 32px;
-  padding: 64px 16px;
+  padding: 0 16px 32px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-.carousel-mobile {
-  width: 100%;
-  @media (min-width: $tablet) {
+
+  .carousel-mobile {
+    width: 100%;
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  .carousel-desktop {
     display: none;
+    width: 100%;
+    @media (min-width: $tablet) {
+      display: block;
+    }
   }
-}
-.carousel-desktop {
-  display: none;
-  width: 100%;
-  @media (min-width: $tablet) {
-    display: block;
+  .button {
+    text-decoration: none;
+    text-align: center;
+    width: 240px;
+    height: 47px;
+    padding: 8px;
+    border: 2px solid $tertiary-color;
+    background: transparent;
+    border-radius: $border-radius;
+    color: $tertiary-color;
+    font-weight: $button-weight;
+    position: relative;
+    background-color: $primary-color;
+    &:hover > .button__frame {
+      z-index: -1;
+      width: 240px;
+      height: 47px;
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      border: 2px solid $tertiary-color;
+      border-radius: $border-radius;
+    }
   }
-}
-.button {
-  text-decoration: none;
-  text-align: center;
-  width: 240px;
-  height: 47px;
-  padding: 8px;
-  border: 2px solid $tertiary-color;
-  background: transparent;
-  border-radius: $border-radius;
-  color: $tertiary-color;
-  font-weight: $button-weight;
 }
 </style>
