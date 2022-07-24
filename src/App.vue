@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <NavBar />
     <AccueilView />
+    <NavBar />
     <PrestationsView />
     <ContactView />
     <AProposView />
@@ -120,8 +120,10 @@ export default {
 #app {
   width: 100vw;
   height: 100vh;
+  overflow: auto;
 }
 .vertical-slider {
+  z-index: -1;
   height: 100vh;
   width: 140px;
   display: flex;
@@ -136,6 +138,17 @@ export default {
     top: 0;
     right: 80px;
     left: inherit;
+
+    &.track {
+      gap: 800px;
+      animation: slide2 200s linear infinite;
+      @keyframes slide2 {
+        to {
+          transform: translateY(-3993.6px);
+          // 940*4 + 58.4*4
+        }
+      }
+    }
   }
   @media (min-width: $desktop) {
     display: block;

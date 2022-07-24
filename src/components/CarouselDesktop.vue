@@ -44,21 +44,21 @@
 
 <style lang="scss">
 .slide {
-  &--0 {
-    background-image: url("");
-  }
-  &--1 {
-    background-image: url("");
-  }
-  &--2 {
-    background-image: url("");
-  }
-  &--3 {
-    background-image: url("");
-  }
-  &--4 {
-    background-image: url("");
-  }
+  // &--0 {
+  //   background-image: url("");
+  // }
+  // &--1 {
+  //   background-image: url("");
+  // }
+  // &--2 {
+  //   background-image: url("");
+  // }
+  // &--3 {
+  //   background-image: url("");
+  // }
+  // &--4 {
+  //   background-image: url("");
+  // }
 }
 </style>
 <script>

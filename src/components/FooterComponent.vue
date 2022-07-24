@@ -18,6 +18,7 @@ export default {
   width: 100vw;
   justify-content: space-between;
   padding: 10px 16px;
+  background-color: black;
 
   @media (min-width: $tablet) {
     justify-content: flex-end;

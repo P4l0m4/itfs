@@ -81,6 +81,10 @@ export default {
       left: 16px;
       border: 2px solid $primary-color;
       border-radius: $border-radius;
+      display: none;
+      @media (min-width: $desktop) {
+        display: block;
+      }
     }
   }
 }

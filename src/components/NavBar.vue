@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="navbar">
     <nav class="nav-mobile">
       <a
         class="nav-mobile__link"
@@ -102,6 +102,12 @@ export default {
 };
 </script>
 <style scoped lang="scss">
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  background-color: rgb(0, 0, 0, 0.4);
+}
 .nav-mobile {
   width: 100vw;
   display: flex;
@@ -112,6 +118,8 @@ export default {
   font-weight: $light-weight;
   font-size: 12px;
   border-radius: $border-radius;
+  position: sticky;
+  top: 100vh;
   @media (min-width: $tablet) {
     display: none;
   }
@@ -138,7 +146,7 @@ export default {
   display: none;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 24px 24px 0 24px;
   overflow: hidden;
   white-space: nowrap;
 

@@ -4,8 +4,10 @@ import router from "./router";
 import store from "./store";
 import "@/styles/global.scss";
 import Vuelidate from "vuelidate";
+import Particles from "particles.vue";
 
 Vue.use(Vuelidate);
+Vue.use(Particles);
 
 Vue.config.productionTip = false;
 
