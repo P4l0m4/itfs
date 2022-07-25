@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <AccueilView />
+    <div class="separator"></div>
     <NavBar />
     <PrestationsView />
     <ContactView />
@@ -12,35 +13,35 @@
       <div class="vertical-slider__line"></div>
       <div class="vertical-slider__track">
         <div class="vertical-slider__dot">
-          <p class="vertical-slider__dot__text">Lorem ipsum</p>
+          <p class="vertical-slider__dot__text">ITFS</p>
           <div class="vertical-slider__dot__circle"></div>
         </div>
         <div class="vertical-slider__dot">
-          <p class="vertical-slider__dot__text">Lorem ipsum</p>
+          <p class="vertical-slider__dot__text">Qualité</p>
           <div class="vertical-slider__dot__circle"></div>
         </div>
         <div class="vertical-slider__dot">
-          <p class="vertical-slider__dot__text">Lorem ipsum</p>
+          <p class="vertical-slider__dot__text">Passion</p>
           <div class="vertical-slider__dot__circle"></div>
         </div>
         <div class="vertical-slider__dot">
-          <p class="vertical-slider__dot__text">Lorem ipsum</p>
+          <p class="vertical-slider__dot__text">Créativité</p>
           <div class="vertical-slider__dot__circle"></div>
         </div>
         <div class="vertical-slider__dot">
-          <p class="vertical-slider__dot__text">Lorem ipsum</p>
+          <p class="vertical-slider__dot__text">ITFS</p>
           <div class="vertical-slider__dot__circle"></div>
         </div>
         <div class="vertical-slider__dot">
-          <p class="vertical-slider__dot__text">Lorem ipsum</p>
+          <p class="vertical-slider__dot__text">Qualité</p>
           <div class="vertical-slider__dot__circle"></div>
         </div>
         <div class="vertical-slider__dot">
-          <p class="vertical-slider__dot__text">Lorem ipsum</p>
+          <p class="vertical-slider__dot__text">Passion</p>
           <div class="vertical-slider__dot__circle"></div>
         </div>
         <div class="vertical-slider__dot">
-          <p class="vertical-slider__dot__text">Lorem ipsum</p>
+          <p class="vertical-slider__dot__text">Créativité</p>
           <div class="vertical-slider__dot__circle"></div>
         </div>
       </div>
@@ -50,35 +51,35 @@
       <div class="vertical-slider__line line2"></div>
       <div class="vertical-slider__track track2">
         <div class="vertical-slider__dot">
-          <p class="vertical-slider__dot__text">Lorem ipsum</p>
+          <p class="vertical-slider__dot__text">Satisfaction</p>
           <div class="vertical-slider__dot__circle"></div>
         </div>
         <div class="vertical-slider__dot">
-          <p class="vertical-slider__dot__text">Lorem ipsum</p>
+          <p class="vertical-slider__dot__text">Sécurité</p>
           <div class="vertical-slider__dot__circle"></div>
         </div>
         <div class="vertical-slider__dot">
-          <p class="vertical-slider__dot__text">Lorem ipsum</p>
+          <p class="vertical-slider__dot__text">Formation</p>
           <div class="vertical-slider__dot__circle"></div>
         </div>
         <div class="vertical-slider__dot">
-          <p class="vertical-slider__dot__text">Lorem ipsum</p>
+          <p class="vertical-slider__dot__text">Qualité</p>
           <div class="vertical-slider__dot__circle"></div>
         </div>
         <div class="vertical-slider__dot">
-          <p class="vertical-slider__dot__text">Lorem ipsum</p>
+          <p class="vertical-slider__dot__text">Satisfaction</p>
           <div class="vertical-slider__dot__circle"></div>
         </div>
         <div class="vertical-slider__dot">
-          <p class="vertical-slider__dot__text">Lorem ipsum</p>
+          <p class="vertical-slider__dot__text">Sécurité</p>
           <div class="vertical-slider__dot__circle"></div>
         </div>
         <div class="vertical-slider__dot">
-          <p class="vertical-slider__dot__text">Lorem ipsum</p>
+          <p class="vertical-slider__dot__text">Formation</p>
           <div class="vertical-slider__dot__circle"></div>
         </div>
         <div class="vertical-slider__dot">
-          <p class="vertical-slider__dot__text">Lorem ipsum</p>
+          <p class="vertical-slider__dot__text">Qualité</p>
           <div class="vertical-slider__dot__circle"></div>
         </div>
       </div>
@@ -121,6 +122,11 @@ export default {
   width: 100vw;
   height: 100vh;
   overflow: auto;
+  .separator {
+    width: 100vw;
+    height: 32px;
+    background-color: rgb(0, 0, 0, 0.4);
+  }
 }
 .vertical-slider {
   z-index: -1;
@@ -197,6 +203,7 @@ export default {
     &__text {
       font-weight: 100;
       font-size: 20px;
+      background-color: rgb(30, 30, 30, 0.5);
     }
   }
 }

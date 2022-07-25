@@ -146,7 +146,7 @@ export default {
   display: none;
   align-items: center;
   justify-content: center;
-  padding: 24px 24px 0 24px;
+  padding: 8px 24px 0 24px;
   overflow: hidden;
   white-space: nowrap;
 
@@ -159,8 +159,8 @@ export default {
   }
 
   &__logo {
-    width: 100px !important;
-    height: 100px !important;
+    width: 80px !important;
+    height: 70px !important;
     @media (min-width: 424px) {
       display: none;
     }

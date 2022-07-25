@@ -6,12 +6,10 @@
       <div class="horizontal-block__text">
         <h3 class="horizontal-block__text__title">Qui suis-je ?</h3>
         <p class="horizontal-block__text__subtitle">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-          placeat, architecto omnis iure, voluptatum illum ratione enim culpa
-          nihil repudiandae deserunt ex porro possimus? Maiores temporibus ipsa
-          autem error nihil repudiandae deserunt ex porro possimus? Maiores
-          temporibus ipsa autem error nihil repudiandae deserunt ex porro
-          possimus? Maiores temporibus ipsa autem error
+          Daniel Perdriolle<br />
+          Fondateur d'ITFS et d'IFS 73 et Directeur de programme à l'INSEEC.
+          Passionné par la transmission, je suis un travailleur acharné et je me
+          dévoue pour mes clients... et mes étudiants !
         </p>
       </div>
     </div>
@@ -19,17 +17,17 @@
       <div class="vertical-block">
         <canvas></canvas>
 
-        <h3 class="vertical-block__title">Texte du block</h3>
+        <h3 class="vertical-block__title">Qualité</h3>
       </div>
       <div class="vertical-block">
         <canvas></canvas>
 
-        <h3 class="vertical-block__title">Texte du block</h3>
+        <h3 class="vertical-block__title">Passion</h3>
       </div>
       <div class="vertical-block">
         <canvas></canvas>
 
-        <h3 class="vertical-block__title">Texte du block</h3>
+        <h3 class="vertical-block__title">Bienveillance</h3>
       </div>
     </div>
     <div class="horizontal-block">
@@ -41,10 +39,7 @@
           Lorem ipsum dolor sit amet con sectetur adipis icing elit. Nulla
           placeat, archi tecto omnis iure, volu ptatum illum rati one enim culpa
           nihil repu dian dae des erunt ex porro poss imus? Maiores temp oribus
-          ipsa autem error nihil repudi andae dese runt ex porro poss imus? Maio
-          res tempor ibus ipsa autem error nihil repud iandae dese runt ex porro
-          autem error nihil repud ian dae dese runt ex porro poss imus? Maiores
-          tempo ribus ipsa autem error nihil repud iandae dese runt ex porro
+          ipsa autem error nihil repudi andae dese runt ex porro poss imus?
         </p>
       </div>
       <canvas></canvas>
@@ -133,7 +128,6 @@
 
       canvas {
         background-color: black;
-        // width: clamp(80px, 100%, 200px);
         width: 100%;
         height: 110px;
         @media (min-width: $tablet) {
