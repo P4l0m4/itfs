@@ -10,24 +10,31 @@
     <div class="carousel-desktop">
       <CarouselDesktop />
     </div>
+    <a class="button" href="#contact"
+      >Contacter ITFS
+      <div class="button__frame"></div
+    ></a>
     <div class="catalogue">
       <details class="catalogue__card" open>
         <summary>
           <img
             class="catalogue__card__icon"
-            src="@/assets/monitor.svg"
+            src="@/assets/icons/monitor.svg"
           />Bureautique
         </summary>
         <ul>
           <li>Excel</li>
           <li>Powerpoint</li>
           <li>Word</li>
+          <li>Access</li>
         </ul>
       </details>
       <details class="catalogue__card" open>
         <summary>
-          <img class="catalogue__card__icon" src="@/assets/database.svg" />Big
-          Data
+          <img
+            class="catalogue__card__icon"
+            src="@/assets/icons/database.svg"
+          />Big Data
         </summary>
         <ul>
           <li>Lorem ipsum dolor sit</li>
@@ -39,19 +46,22 @@
         <summary>
           <img
             class="catalogue__card__icon"
-            src="@/assets/code-tags.svg"
+            src="@/assets/icons/code-tags.svg"
           />Développement Web
         </summary>
         <ul>
-          <li>Lorem ipsum dolor sit</li>
-          <li>Lorem ipsum dolor sit</li>
-          <li>Lorem ipsum dolor sit</li>
+          <li>HTML / CSS / JS</li>
+          <li>WordPress</li>
+          <li>PrestaShop</li>
+          <li>UX design</li>
         </ul>
       </details>
       <details class="catalogue__card" open>
         <summary>
-          <img class="catalogue__card__icon" src="@/assets/lock.svg" />Audits
-          sécurité
+          <img
+            class="catalogue__card__icon"
+            src="@/assets/icons/magnify.svg"
+          />Web marketing et SEO
         </summary>
         <ul>
           <li>Lorem ipsum dolor sit</li>
@@ -63,19 +73,40 @@
         <summary>
           <img
             class="catalogue__card__icon"
-            src="@/assets/draw.svg"
+            src="@/assets/icons/draw.svg"
           />Infographie
         </summary>
         <ul>
-          <li>Photoshop</li>
-          <li>Lorem ipsum dolor sit</li>
-          <li>Lorem ipsum dolor sit</li>
+          <li>PhotoShop</li>
+          <li>InDesign</li>
+          <li>Illustrator</li>
+          <li>After Effects</li>
+          <li>Première Pro</li>
         </ul>
       </details>
       <details class="catalogue__card">
         <summary>
-          <img class="catalogue__card__icon" src="@/assets/magnify.svg" />Web
-          marketing et SEO
+          <img
+            class="catalogue__card__icon"
+            src="@/assets/icons/lock.svg"
+          />Audits sécurité
+        </summary>
+        <ul>
+          <li>ESX</li>
+          <li>Matériel Cisco</li>
+          <li>Test d'intrusion</li>
+          <li>VOIP (Voix sur IP)</li>
+          <li>Système d'information</li>
+          <li>Configuration sans-fil</li>
+        </ul>
+      </details>
+
+      <details class="catalogue__card">
+        <summary>
+          <img
+            class="catalogue__card__icon"
+            src="@/assets/icons/database.svg"
+          />Base de données
         </summary>
         <ul>
           <li>Lorem ipsum dolor sit</li>
@@ -85,19 +116,10 @@
       </details>
       <details class="catalogue__card">
         <summary>
-          <img class="catalogue__card__icon" src="@/assets/database.svg" />Base
-          de données
-        </summary>
-        <ul>
-          <li>Lorem ipsum dolor sit</li>
-          <li>Lorem ipsum dolor sit</li>
-          <li>Lorem ipsum dolor sit</li>
-        </ul>
-      </details>
-      <details class="catalogue__card">
-        <summary>
-          <img class="catalogue__card__icon" src="@/assets/wifi.svg" />Réseaux
-          et maintenance
+          <img
+            class="catalogue__card__icon"
+            src="@/assets/icons/wifi.svg"
+          />Réseaux et maintenance
         </summary>
         <ul>
           <li>Lorem ipsum dolor sit</li>
@@ -106,10 +128,6 @@
         </ul>
       </details>
     </div>
-    <a class="button" href="#contact"
-      >Contacter ITFS
-      <div class="button__frame"></div
-    ></a>
   </div>
 </template>
 
@@ -128,7 +146,7 @@ export default {
 .container {
   width: 100%;
   gap: 32px;
-  padding: 0 16px 32px;
+  padding: 0 16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,7 +213,7 @@ export default {
       }
       & ul {
         padding: 8px;
-        list-style: inside url("@/assets/check.svg");
+        list-style: inside url("@/assets/icons/check.svg");
         display: flex;
         flex-direction: column;
         gap: 8px;

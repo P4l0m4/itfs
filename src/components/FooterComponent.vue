@@ -19,10 +19,12 @@ export default {
   justify-content: space-between;
   padding: 10px 16px;
   background-color: black;
+  margin-bottom: 80px;
 
   @media (min-width: $tablet) {
     justify-content: flex-end;
     gap: 16px;
+    margin-bottom: unset;
   }
   &__link {
     text-decoration: underline;

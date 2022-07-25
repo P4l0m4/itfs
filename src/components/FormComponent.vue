@@ -304,11 +304,11 @@ export default {
       width: 100%;
       padding: 8px;
       background: rgb(236, 159, 5);
-      background: linear-gradient(
-        90deg,
-        rgba(236, 159, 5, 1) 0%,
-        rgba(236, 86, 5, 1) 100%
-      );
+      // background: linear-gradient(
+      //   90deg,
+      //   rgba(236, 159, 5, 1) 0%,
+      //   rgba(236, 86, 5, 1) 100%
+      // );
       border-radius: $border-radius;
       color: $tertiary-color;
       font-weight: $button-weight;

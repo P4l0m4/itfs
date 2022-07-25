@@ -4,12 +4,12 @@
     <div class="horizontal-block">
       <canvas></canvas>
       <div class="horizontal-block__text">
-        <h3 class="horizontal-block__text__title">Qui suis-je ?</h3>
+        <h3 class="horizontal-block__text__title">Qui sommes nous ?</h3>
         <p class="horizontal-block__text__subtitle">
-          Daniel Perdriolle<br />
-          Fondateur d'ITFS et d'IFS 73 et Directeur de programme à l'INSEEC.
-          Passionné par la transmission, je suis un travailleur acharné et je me
-          dévoue pour mes clients... et mes étudiants !
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi animi
+          modi doloribus veritatis repudiandae earum aliquid corporis, ex
+          tempore, adipisci unde magni voluptate eos eligendi corrupti. Quidem
+          libero architecto alias!
         </p>
       </div>
     </div>
@@ -30,19 +30,29 @@
         <h3 class="vertical-block__title">Bienveillance</h3>
       </div>
     </div>
-    <div class="horizontal-block">
-      <div class="horizontal-block__text">
-        <h3 class="horizontal-block__text__title second-block">
-          Texte du block
-        </h3>
-        <p class="horizontal-block__text__subtitle second-block">
-          Lorem ipsum dolor sit amet con sectetur adipis icing elit. Nulla
-          placeat, archi tecto omnis iure, volu ptatum illum rati one enim culpa
-          nihil repu dian dae des erunt ex porro poss imus? Maiores temp oribus
-          ipsa autem error nihil repudi andae dese runt ex porro poss imus?
-        </p>
+    <div class="references-block">
+      <h3 class="references-block__title">Références</h3>
+      <div class="references-block__images">
+        <img src="@/assets/references/AEC2.png" />
+        <img src="@/assets/references/aries.png" />
+        <img src="@/assets/references/cevoz.png" />
+        <img src="@/assets/references/ciat.gif" />
+        <img src="@/assets/references/csp-beillon.jpg" />
+        <img src="@/assets/references/egc.gif" />
+        <img src="@/assets/references/gabeaute.png" />
+        <img src="@/assets/references/gobelin.png" />
+        <img src="@/assets/references/ingeos.jpg" />
+        <img src="@/assets/references/inseec.png" />
+        <img src="@/assets/references/ipac.png" />
+        <img src="@/assets/references/logo_eurometa.jpg" />
+        <img src="@/assets/references/Logo_La_Teppe.png" />
+        <img src="@/assets/references/logo-sp-formation.png" />
+        <img src="@/assets/references/logo-uga.png" />
+        <img src="@/assets/references/opinel_logobleu.jpg" />
+        <img src="@/assets/references/Photowatt_LogoCouleur.png" />
+        <img src="@/assets/references/pizza-savoyarde.png" />
+        <img src="@/assets/references/sup2i.png" />
       </div>
-      <canvas></canvas>
     </div>
   </div>
 </template>
@@ -92,9 +102,6 @@
       flex-direction: column;
       gap: 24px;
       justify-content: flex-end;
-      .second-block {
-        text-align: right;
-      }
 
       &__title {
         font-size: 20px;
@@ -143,6 +150,37 @@
         font-size: 20px;
         font-weight: $medium-weight;
         text-align: center;
+      }
+    }
+  }
+
+  .references-block {
+    &__title {
+      font-size: 20px;
+      font-weight: $medium-weight;
+      width: 100%;
+      padding: 0 170px;
+    }
+    &__images {
+      width: 100%;
+      border: purple solid 5px;
+      background-color: $tertiary-color;
+      display: grid;
+      grid-auto-rows: minmax(100px, auto);
+      grid-template-columns: repeat(1, 1fr);
+      gap: 8px;
+      padding: 16px 170px;
+
+      @media (min-width: $tablet) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      @media (min-width: $desktop) {
+        grid-template-columns: repeat(8, 1fr);
+      }
+
+      & img {
+        border: green solid 2px;
+        width: 100%;
       }
     }
   }

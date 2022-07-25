@@ -4,23 +4,19 @@
       <div class="contact-text__frame"></div>
       <h2>Contacter ITFS</h2>
       <ul>
+        <li>06 17 03 34 30</li>
         <li>
-          Poppins Extra Light 16px Poppins ExtraLight 16px Poppins Extra Light
+          77 chemin des Cattis 73290<br />
+          LA MOTTE SERVOLEX
         </li>
         <li>
-          Poppins Extra Light 16px Poppins Extra Light 16px Poppins Extra Light
-        </li>
-        <li>
-          Poppins Extra Light 16px Poppins Extra Light 16px Poppins Extra Light
-        </li>
-        <li>
-          Poppins Extra Light 16px Poppins Extra Light 16px Poppins Extra Light
-        </li>
-        <li>
-          Poppins Extra Light 16px Poppins Extra Light 16px Poppins Extra Light
-        </li>
-        <li>
-          Poppins Extra Light 16px Poppins Extra Light 16px Poppins Extra Light
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2790.8946176110803!2d5.840313715435519!3d45.61276167910297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b0862d14da5b3%3A0xc1d509f20ee81209!2s77%20Chem.%20de%20Cattis%2C%2073290%20La%20Motte-Servolex!5e0!3m2!1sfr!2sfr!4v1658756283944!5m2!1sfr!2sfr"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </li>
       </ul>
     </div>
@@ -49,7 +45,7 @@ export default {
   flex-direction: column-reverse;
   @media (min-width: $desktop) {
     flex-direction: row;
-    padding: 64px 24px;
+    padding: 64px 16px;
   }
 
   .contact-text {
@@ -63,13 +59,18 @@ export default {
     gap: 32px;
     border-radius: $border-radius;
     & ul {
-      padding: 0 16px;
       display: flex;
       flex-direction: column;
       gap: 24px;
       & li {
         font-size: 16px;
         font-weight: 100;
+        list-style: none;
+        & iframe {
+          width: 100%;
+          height: 290px;
+          border-radius: $border-radius;
+        }
       }
     }
     &__frame {

@@ -2,10 +2,13 @@
   <div id="app">
     <AccueilView />
     <div class="separator"></div>
-    <NavBar />
+    <NavbarDesktop />
+    <div class="separator"></div>
     <PrestationsView />
+    <InfiniteSlider />
     <ContactView />
     <AProposView />
+    <NavbarMobile />
     <FooterComponent />
 
     <!-- VERTICAL SLIDER left -->
@@ -88,19 +91,23 @@
   </div>
 </template>
 <script>
-import NavBar from "@/components/NavBar.vue";
+import NavbarDesktop from "@/components/NavbarDesktop.vue";
 import AccueilView from "./views/AccueilView.vue";
 import PrestationsView from "./views/PrestationsView.vue";
+import InfiniteSlider from "@/components/InfiniteSlider.vue";
 import ContactView from "./views/ContactView.vue";
 import AProposView from "./views/AProposView.vue";
+import NavbarMobile from "@/components/NavbarMobile.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
 export default {
   components: {
-    NavBar,
+    NavbarDesktop,
     AccueilView,
     PrestationsView,
+    InfiniteSlider,
     ContactView,
     AProposView,
+    NavbarMobile,
     FooterComponent,
   },
   data() {
@@ -124,8 +131,12 @@ export default {
   overflow: auto;
   .separator {
     width: 100vw;
-    height: 32px;
+    height: 24px;
     background-color: rgb(0, 0, 0, 0.4);
+    display: none;
+    @media (min-width: $desktop) {
+      display: block;
+    }
   }
 }
 .vertical-slider {
