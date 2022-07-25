@@ -38,8 +38,8 @@ export default {
     background: rgb(236, 159, 5);
     background: linear-gradient(
       90deg,
-      rgba(236, 159, 5, 0.4) 0%,
-      rgba(236, 86, 5, 0.4) 100%
+      rgba(236, 159, 5, 0.6) 0%,
+      rgba(236, 86, 5, 0.6) 100%
     );
 
     &:nth-child(2) {
