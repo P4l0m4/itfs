@@ -1,5 +1,6 @@
 <template>
   <div class="scene">
+    <div class="scene__land"></div>
     <div class="scene__sprite"></div>
     <infinite-slide-bar
       duration="40s"
@@ -49,10 +50,32 @@ export default {
 <style lang="scss" scoped>
 .scene {
   padding-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  &__land {
+    background-image: url("@/assets/landscape.png");
+    height: 75px;
+    width: 100%;
+    position: absolute;
+    top: 15px;
+    z-index: 2;
+    background-repeat: repeat-x;
+    animation: slide 30s linear infinite;
+
+    @keyframes slide {
+      to {
+        background-position: -1804px;
+      }
+    }
+  }
   &__sprite {
     width: 35px;
     height: 65px;
     background-image: url("@/assets/mario.png");
+    z-index: 3;
     animation: move 0.4s infinite steps(3);
     @keyframes move {
       from {

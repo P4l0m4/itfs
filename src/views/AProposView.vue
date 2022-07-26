@@ -2,7 +2,7 @@
   <div id="a-propos">
     <div class="title-container"><h2>A propos</h2></div>
     <div class="horizontal-block">
-      <canvas></canvas>
+      <ThreejsPicture class="canvas" />
       <div class="horizontal-block__text">
         <h3 class="horizontal-block__text__title">Qui sommes nous ?</h3>
         <p class="horizontal-block__text__subtitle">
@@ -74,8 +74,11 @@
   </div>
 </template>
 <script>
+import ThreejsPicture from "@/components/ThreejsPicture.vue";
 export default {
-  components: {},
+  components: {
+    ThreejsPicture,
+  },
   // mounted() {
   //   this.rotation();
   // },
@@ -132,10 +135,10 @@ export default {
       width: clamp(240px, 100%, 800px);
     }
 
-    canvas {
-      background-color: black;
+    .canvas {
       width: 100%;
       height: 360px;
+      border: black solid 2px;
 
       @media (min-width: $tablet) {
         width: 200px;
@@ -219,17 +222,18 @@ export default {
     &__frames {
       width: 100%;
       min-width: 100px;
-
       display: flex;
       justify-content: center;
       gap: 24px;
       flex-wrap: wrap;
 
       &__frame {
-        background-color: $primary-color;
         padding: 8px;
         border-radius: $border-radius;
         height: 100px;
+        background-image: url("@/assets/brick.png");
+        background-repeat: repeat;
+        background-size: 60%;
         & img {
           border-radius: $border-radius;
           width: 100%;
