@@ -45,10 +45,37 @@
         </div>
       </div>
     </div>
+    <div class="partners-block">
+      <p>Nos partenaires</p>
+      <div class="partners-block__frames">
+        <div class="partners-block__frames__frame">
+          <img src="@/assets/partners/inseec.jpeg" />
+        </div>
+        <div class="partners-block__frames__frame">
+          <img src="@/assets/partners/cesni.png" />
+        </div>
+        <div class="partners-block__frames__frame">
+          <img src="@/assets/partners/ipac.png" />
+        </div>
+        <div class="partners-block__frames__frame">
+          <img src="@/assets/partners/logo-uga.png" />
+        </div>
+        <div class="partners-block__frames__frame">
+          <img src="@/assets/partners/aries.png" />
+        </div>
+        <div class="partners-block__frames__frame">
+          <img src="@/assets/partners/sup2i.png" />
+        </div>
+        <div class="partners-block__frames__frame">
+          <img src="@/assets/partners/sp-formation.jpg" />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <script>
 export default {
+  components: {},
   // mounted() {
   //   this.rotation();
   // },
@@ -172,6 +199,42 @@ export default {
             width: 100%;
             height: 100%;
           }
+        }
+      }
+    }
+  }
+
+  .partners-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    @media (min-width: $desktop) {
+      padding: 24px 170px;
+    }
+
+    & p {
+      font-size: 20px;
+    }
+    &__frames {
+      width: 100%;
+      min-width: 100px;
+
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+
+      &__frame {
+        background-color: $primary-color;
+        padding: 8px;
+        border-radius: $border-radius;
+        height: 100px;
+        & img {
+          border-radius: $border-radius;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
       }
     }
