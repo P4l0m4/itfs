@@ -138,7 +138,7 @@ export default {
     .canvas {
       width: 100%;
       height: 360px;
-      border: black solid 2px;
+      background-color: black;
 
       @media (min-width: $tablet) {
         width: 200px;

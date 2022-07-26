@@ -157,6 +157,6 @@ export default {
 
 <style lang="scss" scoped>
 .webgl {
-  border: blue solid 1px;
+  // border: blue solid 1px;
 }
 </style>
