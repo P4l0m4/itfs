@@ -57,8 +57,8 @@ export default {
   position: relative;
   &__land {
     background-image: url("@/assets/brick.png");
-    background-size: 60px;
-    height: 60px;
+    background-size: 50px;
+    height: 50px;
     width: 100%;
     background-repeat: repeat;
     animation: slide 30s linear infinite;
