@@ -4,7 +4,7 @@
     <div class="scene__sprite"></div>
     <infinite-slide-bar
       duration="40s"
-      :barStyle="{ background: '#ffff', padding: '16px 0' }"
+      :barStyle="{ background: 'rgb(55, 55,55, 0.8)', padding: '16px 0' }"
     >
       <div class="infinite-slide-bar">
         <img src="@/assets/references/opinel_logobleu.jpg" />
@@ -90,11 +90,15 @@ export default {
 .infinite-slide-bar {
   display: flex;
   gap: 16px;
+  opacity: 0.8;
 
   & img {
     width: 80px;
     height: 50px;
     object-fit: contain;
+    border: white solid 8px;
+    background-color: white;
+    border-radius: $border-radius;
   }
 }
 </style>
