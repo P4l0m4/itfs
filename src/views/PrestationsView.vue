@@ -40,8 +40,10 @@
           <li>Lorem ipsum dolor sit</li>
           <li>Lorem ipsum dolor sit</li>
           <li>Lorem ipsum dolor sit</li>
+          <li>Lorem ipsum dolor sit</li>
         </ul>
       </details>
+
       <details class="catalogue__card" open>
         <summary>
           <img
@@ -67,8 +69,10 @@
           <li>Lorem ipsum dolor sit</li>
           <li>Lorem ipsum dolor sit</li>
           <li>Lorem ipsum dolor sit</li>
+          <li>Lorem ipsum dolor sit</li>
         </ul>
       </details>
+
       <details class="catalogue__card">
         <summary>
           <img
@@ -101,7 +105,7 @@
         </ul>
       </details>
 
-      <details class="catalogue__card">
+      <details class="catalogue__card last-wrapper">
         <summary>
           <img
             class="catalogue__card__icon"
@@ -182,26 +186,32 @@ export default {
   }
   .catalogue {
     width: 100%;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     padding: 16px;
-    gap: 24px;
+    gap: 16px;
     justify-content: center;
-    grid-auto-rows: minmax(100px, auto);
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    // align-items: center;
     @media (min-width: $tablet) {
+      padding: 24px 170px;
       grid-template-columns: repeat(2, 1fr);
     }
+
     @media (min-width: $desktop) {
-      grid-template-columns: repeat(4, 1fr);
       padding: 24px 170px;
+      grid-template-columns: repeat(4, 1fr);
     }
     &__card {
-      width: clamp(250px, 100%, 500px);
+      width: 100%;
       background-color: $primary-color;
       padding: 16px;
       border-radius: $border-radius;
       cursor: pointer;
       height: fit-content;
+      max-width: 500px;
 
       &__icon {
         width: 20px;
@@ -218,32 +228,40 @@ export default {
         flex-direction: column;
         gap: 8px;
         font-weight: $light-weight;
+        white-space: nowrap;
       }
     }
   }
-  .button {
-    text-decoration: none;
-    text-align: center;
+}
+.button {
+  text-decoration: none;
+  text-align: center;
+  width: 240px;
+  height: 47px;
+  padding: 8px;
+  border: 2px solid $tertiary-color;
+  background: transparent;
+  border-radius: $border-radius;
+  color: $tertiary-color;
+  font-weight: $button-weight;
+  position: relative;
+  background-color: $primary-color;
+  &:hover > .button__frame {
+    z-index: -1;
     width: 240px;
     height: 47px;
-    padding: 8px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
     border: 2px solid $tertiary-color;
-    background: transparent;
     border-radius: $border-radius;
-    color: $tertiary-color;
-    font-weight: $button-weight;
-    position: relative;
-    background-color: $primary-color;
-    &:hover > .button__frame {
-      z-index: -1;
-      width: 240px;
-      height: 47px;
-      position: absolute;
-      top: 8px;
-      left: 8px;
-      border: 2px solid $tertiary-color;
-      border-radius: $border-radius;
-    }
   }
 }
+
+// .last-wrapper {
+//   @media (min-width: $desktop) {
+//     flex-direction: row;
+//     max-width: 400px !important;
+//   }
+// }
 </style>

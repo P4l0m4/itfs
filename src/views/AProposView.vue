@@ -13,49 +13,68 @@
         </p>
       </div>
     </div>
-    <div class="vertical-blocks-container">
-      <div class="vertical-block">
-        <canvas></canvas>
 
-        <h3 class="vertical-block__title">Qualité</h3>
-      </div>
-      <div class="vertical-block">
-        <canvas></canvas>
-
-        <h3 class="vertical-block__title">Passion</h3>
-      </div>
-      <div class="vertical-block">
-        <canvas></canvas>
-
-        <h3 class="vertical-block__title">Bienveillance</h3>
-      </div>
-    </div>
-    <div class="references-block">
-      <h3 class="references-block__title">Références</h3>
-      <div class="references-block__images">
-        <img src="@/assets/references/AEC2.png" />
-        <img src="@/assets/references/aries.png" />
-        <img src="@/assets/references/cevoz.png" />
-        <img src="@/assets/references/ciat.gif" />
-        <img src="@/assets/references/csp-beillon.jpg" />
-        <img src="@/assets/references/egc.gif" />
-        <img src="@/assets/references/gabeaute.png" />
-        <img src="@/assets/references/gobelin.png" />
-        <img src="@/assets/references/ingeos.jpg" />
-        <img src="@/assets/references/inseec.png" />
-        <img src="@/assets/references/ipac.png" />
-        <img src="@/assets/references/logo_eurometa.jpg" />
-        <img src="@/assets/references/Logo_La_Teppe.png" />
-        <img src="@/assets/references/logo-sp-formation.png" />
-        <img src="@/assets/references/logo-uga.png" />
-        <img src="@/assets/references/opinel_logobleu.jpg" />
-        <img src="@/assets/references/Photowatt_LogoCouleur.png" />
-        <img src="@/assets/references/pizza-savoyarde.png" />
-        <img src="@/assets/references/sup2i.png" />
+    <div class="values-block">
+      <!-- <h3 class="values-block__title">Nos valeurs</h3> -->
+      <div class="values-block__cubes">
+        <div class="values-block__cubes__cube">
+          <div class="values-block__cubes__cube__face front">Qualité</div>
+          <div class="values-block__cubes__cube__face back">Passion</div>
+          <div class="values-block__cubes__cube__face left"></div>
+          <div class="values-block__cubes__cube__face right"></div>
+          <div class="values-block__cubes__cube__face top">Bienveillance</div>
+          <div class="values-block__cubes__cube__face bottom">Créativité</div>
+        </div>
+        <div class="values-block__cubes__cube">
+          <div class="values-block__cubes__cube__face front">Créativité</div>
+          <div class="values-block__cubes__cube__face back">Qualité</div>
+          <div class="values-block__cubes__cube__face left"></div>
+          <div class="values-block__cubes__cube__face right"></div>
+          <div class="values-block__cubes__cube__face top">Passion</div>
+          <div class="values-block__cubes__cube__face bottom">
+            Bienveillance
+          </div>
+        </div>
+        <div class="values-block__cubes__cube">
+          <div class="values-block__cubes__cube__face front">Bienveillance</div>
+          <div class="values-block__cubes__cube__face back">Créativité</div>
+          <div class="values-block__cubes__cube__face left"></div>
+          <div class="values-block__cubes__cube__face right"></div>
+          <div class="values-block__cubes__cube__face top">Qualité</div>
+          <div class="values-block__cubes__cube__face bottom">Passion</div>
+        </div>
       </div>
     </div>
   </div>
 </template>
+<script>
+export default {
+  // mounted() {
+  //   this.rotation();
+  // },
+  // methods: {
+  //   rotation() {
+  //     const cube = document.querySelectorAll(".values-block__cubes__cube");
+  //     console.log("function rotation is running");
+  //     window.addEventListener("scroll", function (event) {
+  //       console.log(window.scrollY);
+  //       cube.style.transform = "rotateX(" + window.scrollY + "deg)";
+  //       console.log(event);
+  //     });
+  //   },
+  // },
+
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      console.log(window.scrollY);
+    },
+  },
+};
+</script>
+
 <style lang="scss" scoped>
 #a-propos {
   display: flex;
@@ -114,75 +133,101 @@
       }
     }
   }
-  .vertical-blocks-container {
-    width: clamp(240px, 100%, 384px);
-    display: flex;
-    gap: 24px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+
+  .values-block {
+    width: 100%;
+    padding: 24px;
+
     @media (min-width: $tablet) {
-      width: clamp(240px, 100%, 800px);
+      padding: 24px 170px;
     }
 
-    .vertical-block {
+    &__cubes {
       width: 100%;
+      perspective: 1500px;
       display: flex;
-      gap: 16px;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
+      gap: 24px;
+      flex-wrap: wrap;
 
-      canvas {
-        background-color: black;
-        width: 100%;
-        height: 110px;
-        @media (min-width: $tablet) {
-          height: 190px;
+      &__cube {
+        width: 250px;
+        height: 100px;
+        position: relative;
+        transform-style: preserve-3d;
+        transform: rotateX(0deg);
+        // animation: spin 10s linear infinite;
+
+        &__face {
+          border: $secondary-color solid 2px;
+          background-color: rgba(6, 6, 6, 0.8);
+          position: absolute;
+          width: 250px;
+          height: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          & img {
+            width: 100%;
+            height: 100%;
+          }
         }
-        @media (min-width: $desktop) {
-          width: 100%;
-          height: 240px;
-        }
-      }
-
-      &__title {
-        font-size: 20px;
-        font-weight: $medium-weight;
-        text-align: center;
-      }
-    }
-  }
-
-  .references-block {
-    &__title {
-      font-size: 20px;
-      font-weight: $medium-weight;
-      width: 100%;
-      padding: 0 170px;
-    }
-    &__images {
-      width: 100%;
-      border: purple solid 5px;
-      background-color: $tertiary-color;
-      display: grid;
-      grid-auto-rows: minmax(100px, auto);
-      grid-template-columns: repeat(1, 1fr);
-      gap: 8px;
-      padding: 16px 170px;
-
-      @media (min-width: $tablet) {
-        grid-template-columns: repeat(4, 1fr);
-      }
-      @media (min-width: $desktop) {
-        grid-template-columns: repeat(8, 1fr);
-      }
-
-      & img {
-        border: green solid 2px;
-        width: 100%;
       }
     }
   }
 }
+
+.top {
+  transform: rotateX(90deg) translateZ(50px);
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(50px);
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(200px);
+  width: 100px !important;
+}
+.left {
+  transform: rotateY(-90deg) translateZ(50px);
+  width: 100px !important;
+}
+
+.front {
+  transform: rotateX(0deg) translateZ(50px);
+}
+.back {
+  transform: rotateX(-180deg) translateZ(50px);
+}
+
+// @keyframes spin {
+//   from {
+//     transform: rotateX(0deg);
+//   }
+//   23% {
+//     transform: rotateX(0deg);
+//   }
+//   25% {
+//     transform: rotateX(90deg);
+//   }
+//   48% {
+//     transform: rotateX(90deg);
+//   }
+//   50% {
+//     transform: rotateX(180deg);
+//   }
+//   73% {
+//     transform: rotateX(180deg);
+//   }
+//   75% {
+//     transform: rotateX(270deg);
+//   }
+//   98% {
+//     transform: rotateX(270deg);
+//   }
+//   to {
+//     transform: rotateX(360deg);
+//   }
+// }
 </style>

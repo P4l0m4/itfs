@@ -1,5 +1,8 @@
 <template>
-  <infinite-slide-bar :barStyle="{ background: '#ec9f05', padding: '8px 0' }">
+  <infinite-slide-bar
+    duration="40s"
+    :barStyle="{ background: '#ec9f05', padding: '8px 0' }"
+  >
     <!-- <span style="color: #fff">Helo World, I love Vue Infinite Slide Bar</span> -->
     <div class="infinite-slide-bar">
       <div class="infinite-slide-bar__element">

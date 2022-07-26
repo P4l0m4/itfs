@@ -8,6 +8,7 @@
     <InfiniteSlider />
     <ContactView />
     <AProposView />
+    <ReferencesSlider />
     <NavbarMobile />
     <FooterComponent />
 
@@ -97,6 +98,7 @@ import PrestationsView from "./views/PrestationsView.vue";
 import InfiniteSlider from "@/components/InfiniteSlider.vue";
 import ContactView from "./views/ContactView.vue";
 import AProposView from "./views/AProposView.vue";
+import ReferencesSlider from "@/components/ReferencesSlider.vue";
 import NavbarMobile from "@/components/NavbarMobile.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
 export default {
@@ -107,6 +109,7 @@ export default {
     InfiniteSlider,
     ContactView,
     AProposView,
+    ReferencesSlider,
     NavbarMobile,
     FooterComponent,
   },
