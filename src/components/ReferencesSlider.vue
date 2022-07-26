@@ -1,9 +1,9 @@
 <template>
   <div class="scene">
-    <div class="scene__land"></div>
     <div class="scene__sprite"></div>
+    <div class="scene__land"></div>
     <infinite-slide-bar
-      duration="40s"
+      duration="50s"
       :barStyle="{ background: 'rgb(55, 55,55, 0.8)', padding: '16px 0' }"
     >
       <div class="infinite-slide-bar">
@@ -56,13 +56,11 @@ export default {
   flex-direction: column;
   position: relative;
   &__land {
-    background-image: url("@/assets/landscape.png");
-    height: 75px;
+    background-image: url("@/assets/brick.png");
+    background-size: 60px;
+    height: 60px;
     width: 100%;
-    position: absolute;
-    top: 15px;
-    z-index: 2;
-    background-repeat: repeat-x;
+    background-repeat: repeat;
     animation: slide 30s linear infinite;
 
     @keyframes slide {
@@ -73,7 +71,7 @@ export default {
   }
   &__sprite {
     width: 35px;
-    height: 65px;
+    height: 45px;
     background-image: url("@/assets/mario.png");
     z-index: 3;
     animation: move 0.4s infinite steps(3);
@@ -91,10 +89,11 @@ export default {
   display: flex;
   gap: 16px;
   opacity: 0.8;
+  background-image: url("@/assets/brick.png");
 
   & img {
-    width: 80px;
-    height: 50px;
+    width: 100px;
+    height: 80px;
     object-fit: contain;
     border: white solid 8px;
     background-color: white;

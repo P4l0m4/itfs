@@ -12,8 +12,8 @@
         ><div class="slide slide--0">
           <div class="slide__line"></div>
           <p class="slide__text">Big Data</p>
-        </div></slide
-      >
+        </div>
+      </slide>
       <slide :index="1"
         ><div class="slide slide--1">
           <div class="slide__line"></div>

@@ -14,7 +14,7 @@
       >Contacter ITFS
       <div class="button__frame"></div
     ></a>
-    <div class="catalogue">
+    <div class="catalogue" id="catalogue">
       <details class="catalogue__card" open>
         <summary>
           <img
