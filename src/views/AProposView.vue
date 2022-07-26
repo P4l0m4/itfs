@@ -233,7 +233,7 @@ export default {
         height: 100px;
         background-image: url("@/assets/brick.png");
         background-repeat: repeat;
-        background-size: 50px;
+        background-size: 40px;
 
         & img {
           border-radius: $border-radius;
