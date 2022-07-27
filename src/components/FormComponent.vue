@@ -338,17 +338,17 @@ export default {
     &__error {
       font-weight: $light-weight;
       font-size: 12px;
-    }
-    &--sent {
-      display: none;
-      animation: fade 6s linear;
+      &--sent {
+        display: none;
+        animation: fade 6s linear;
 
-      @keyframes fade {
-        from {
-          display: unset;
-        }
-        to {
-          display: unset;
+        @keyframes fade {
+          from {
+            display: unset;
+          }
+          to {
+            display: unset;
+          }
         }
       }
     }
