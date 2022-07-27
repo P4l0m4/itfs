@@ -344,10 +344,10 @@ export default {
 
         @keyframes fade {
           from {
-            display: unset;
+            display: block;
           }
           to {
-            display: unset;
+            display: block;
           }
         }
       }
