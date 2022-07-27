@@ -145,7 +145,7 @@
     >
       Envoyer
     </invisible-recaptcha>
-    <p class="form__error form__error--sent" v-if="sent">Message envoyé !</p>
+    <p class="form__error" v-if="sent">Message envoyé !</p>
   </form>
   <!-- </div> -->
 </template>
@@ -338,19 +338,6 @@ export default {
     &__error {
       font-weight: $light-weight;
       font-size: 12px;
-      &--sent {
-        display: none;
-        animation: fade 6s linear;
-
-        @keyframes fade {
-          from {
-            display: block;
-          }
-          to {
-            display: block;
-          }
-        }
-      }
     }
   }
 }
