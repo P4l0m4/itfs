@@ -10,13 +10,7 @@
     >
       <slide :index="0"
         ><div class="slide slide--0">
-          <a
-            class="slide__clickable"
-            @click="
-              scrollToDetails;
-              opened = 'data';
-            "
-          ></a>
+          <a class="slide__clickable" @click="scroll('#details', 'data')"></a>
           <p class="slide__text">Big Data</p>
         </div>
       </slide>
@@ -24,83 +18,53 @@
         ><div class="slide slide--1">
           <a
             class="slide__clickable"
-            @click="
-              scrollToDetails2;
-              opened = 'audits';
-            "
+            @click="scroll('#details2', 'audits')"
           ></a>
           <p class="slide__text">Audits sécurité</p>
         </div></slide
       >
       <slide :index="2"
         ><div class="slide slide--2">
-          <a
-            class="slide__clickable"
-            @click="
-              scrollToDetails;
-              opened = 'dev';
-            "
-          ></a>
+          <a class="slide__clickable" @click="scroll('#details', 'dev')"></a>
           <p class="slide__text">Développement Web</p>
         </div></slide
       >
       <slide :index="3"
         ><div class="slide slide--3">
-          <a
-            class="slide__clickable"
-            @click="
-              scrollToDetails;
-              opened = 'seo';
-            "
-          ></a>
+          <a class="slide__clickable" @click="scroll('#details', 'seo')"></a>
           <p class="slide__text">Web Marketing et SEO</p>
         </div></slide
       >
       <slide :index="4"
         ><div class="slide slide--4">
-          <a
-            class="slide__clickable"
-            @click="
-              scrollToDetails2;
-              opened = 'bdd';
-            "
-          ></a>
+          <a class="slide__clickable" @click="scroll('#details2', 'bdd')"></a>
           <p class="slide__text">Base de Données</p>
         </div></slide
       >
       <slide :index="5"
         ><div class="slide slide--5">
-          <a
+          <p
             class="slide__clickable"
-            @click="
-              scrollToDetails2;
-              opened = 'reseaux';
-            "
-          ></a>
+            @click="scroll('#details2', 'reseaux')"
+          ></p>
           <p class="slide__text">Réseaux et maintenance</p>
         </div></slide
       >
       <slide :index="6"
         ><div class="slide slide--6">
-          <a
+          <p
             class="slide__clickable"
-            @click="
-              scrollToCatalogue;
-              opened = 'infographie';
-            "
-          ></a>
+            @click="scroll('#catalogue', 'infographie')"
+          ></p>
           <p class="slide__text">Infographie</p>
         </div></slide
       >
       <slide :index="7"
         ><div class="slide slide--4">
-          <a
+          <p
             class="slide__clickable"
-            @click="
-              scrollToDetails;
-              opened = 'bureautique';
-            "
-          ></a>
+            @click="scroll('#details', 'bureautique')"
+          ></p>
           <p class="slide__text">Bureautique</p>
         </div></slide
       >
@@ -122,43 +86,15 @@ export default {
       opened: "all",
     };
   },
-  mounted() {
-    this.openCard();
-  },
-  methods: {
-    openCard() {
-      this.$emit("toggle", this.opened);
-    },
 
-    scrollToDetails() {
-      document.querySelector("#details").scrollIntoView({
+  methods: {
+    scroll(anchor, name) {
+      document.querySelector(anchor).scrollIntoView({
         behavior: "smooth",
       });
-      console.log("scrolled");
-    },
-    scrollToCatalogue() {
-      document.querySelector("#catalogue").scrollIntoView({
-        behavior: "smooth",
-      });
-      console.log("scrolledCatalogue");
-    },
-    scrollToDetails2() {
-      document.querySelector("#details2").scrollIntoView({
-        behavior: "smooth",
-      });
-      console.log("scrolled2");
-    },
-    scrollToDetails3() {
-      document.querySelector("#details3").scrollIntoView({
-        behavior: "smooth",
-      });
-      console.log("scrolled3");
-    },
-    scrollToDetails4() {
-      document.querySelector("#details4").scrollIntoView({
-        behavior: "smooth",
-      });
-      console.log("scrolled4");
+      this.opened = name;
+
+      this.$emit("toggle", this.opened);
     },
   },
 };

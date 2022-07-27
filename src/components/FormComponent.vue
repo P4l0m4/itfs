@@ -131,9 +131,20 @@
         Ce champ est requis
       </div>
     </div>
-    <button class="form__button" type="submit" :disabled="isSubmitting">
+    <!-- <button class="form__button" type="submit" :disabled="isSubmitting">
       Envoyer
-    </button>
+    </button> -->
+
+    <invisible-recaptcha
+      sitekey="	
+6Ley-iUhAAAAAOrgByxPYeJODGtgyN-xUhbk6CVA "
+      class="form__button"
+      type="submit"
+      :disabled="isSubmitting"
+      :callback="submit"
+    >
+      Do something!
+    </invisible-recaptcha>
     <p class="form__error" v-if="isSubmitting">Message envoyé</p>
   </form>
   <!-- </div> -->
@@ -149,9 +160,13 @@ import {
   alpha,
 } from "vuelidate/lib/validators";
 import emailjs from "@emailjs/browser";
+import InvisibleRecaptcha from "vue-invisible-recaptcha";
 
 export default {
   name: "FormComponent",
+  components: {
+    "invisible-recaptcha": InvisibleRecaptcha,
+  },
   data() {
     return {
       name: "",

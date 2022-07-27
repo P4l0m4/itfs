@@ -5,7 +5,7 @@
     </div>
 
     <div class="carousel-mobile">
-      <CarouselMobile />
+      <CarouselMobile @toggle="openCard" />
     </div>
     <div class="carousel-desktop">
       <CarouselDesktop @toggle="openCard" />
@@ -17,7 +17,8 @@
     <div class="catalogue" id="catalogue">
       <details
         class="catalogue__card"
-        :open="{ true: opened === 'all' || opened === 'bureautique' }"
+        :open="opened === 'all' || opened === 'bureautique' ? true : null"
+        :class="{ 'catalogue__card--opened': opened === 'bureautique' }"
       >
         <summary>
           <img
@@ -34,7 +35,7 @@
       </details>
       <details
         class="catalogue__card"
-        :open="{ true: opened === 'all' || opened === 'data' }"
+        :open="opened === 'all' || opened === 'data' ? true : null"
         :class="{ 'catalogue__card--opened': opened === 'data' }"
       >
         <summary>
@@ -54,7 +55,7 @@
       <details
         class="catalogue__card"
         id="details2"
-        :open="{ true: opened === 'all' || opened === 'dev' }"
+        :open="opened === 'all' || opened === 'dev' ? true : null"
         :class="{ 'catalogue__card--opened': opened === 'dev' }"
       >
         <summary>
@@ -72,7 +73,7 @@
       </details>
       <details
         class="catalogue__card"
-        :open="{ true: opened === 'all' || opened === 'seo' }"
+        :open="opened === 'all' || opened === 'seo' ? true : null"
         :class="{ 'catalogue__card--opened': opened === 'seo' }"
       >
         <summary>
@@ -92,7 +93,7 @@
       <details
         class="catalogue__card"
         id="details3"
-        :open="{ true: opened === 'all' || opened === 'infographie' }"
+        :open="opened === 'all' || opened === 'infographie' ? true : null"
         :class="{ 'catalogue__card--opened': opened === 'infographie' }"
       >
         <summary>
@@ -111,7 +112,7 @@
       </details>
       <details
         class="catalogue__card"
-        :open="{ true: opened === 'all' || opened === 'audits' }"
+        :open="opened === 'all' || opened === 'audits' ? true : null"
         :class="{ 'catalogue__card--opened': opened === 'audits' }"
       >
         <summary>
@@ -132,7 +133,7 @@
       <details
         class="catalogue__card last-wrapper"
         id="details4"
-        :open="{ true: opened === 'all' || opened === 'bdd' }"
+        :open="opened === 'all' || opened === 'bdd' ? true : null"
         :class="{ 'catalogue__card--opened': opened === 'bdd' }"
       >
         <summary>
@@ -152,7 +153,7 @@
       <details
         id="reseaux"
         class="catalogue__card"
-        :open="{ true: opened === 'all' || opened === 'reseaux' }"
+        :open="opened === 'all' || opened === 'reseaux' ? true : null"
         :class="{ 'catalogue__card--opened': opened === 'reseaux' }"
       >
         <summary>
@@ -268,6 +269,10 @@ export default {
       & summary {
         display: flex;
         align-items: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        // overflow-wrap: nowrap;
+        white-space: nowrap;
       }
       & ul {
         padding: 8px;
@@ -279,7 +284,7 @@ export default {
         white-space: nowrap;
       }
       &--opened {
-        border: yellow solid 2px;
+        border: $secondary-color solid 2px;
       }
     }
   }
