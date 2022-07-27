@@ -42,7 +42,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column-reverse;
+  flex-direction: column;
   @media (min-width: $desktop) {
     flex-direction: row;
     padding: 64px 16px;

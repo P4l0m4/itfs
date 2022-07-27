@@ -71,7 +71,7 @@ export default {
   }
   &__sprite {
     width: 35px;
-    height: 45px;
+    height: 48px;
     background-image: url("@/assets/mario.png");
     z-index: 3;
     animation: move 0.4s infinite steps(3);

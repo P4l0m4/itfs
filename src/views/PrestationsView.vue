@@ -8,14 +8,17 @@
       <CarouselMobile />
     </div>
     <div class="carousel-desktop">
-      <CarouselDesktop />
+      <CarouselDesktop @toggle="openCard" />
     </div>
-    <a class="button" href="#contact"
+    <a class="button" href="#contact" id="details"
       >Contacter ITFS
       <div class="button__frame"></div
     ></a>
     <div class="catalogue" id="catalogue">
-      <details class="catalogue__card" open>
+      <details
+        class="catalogue__card"
+        :open="{ true: opened === 'all' || opened === 'bureautique' }"
+      >
         <summary>
           <img
             class="catalogue__card__icon"
@@ -29,7 +32,11 @@
           <li>Access</li>
         </ul>
       </details>
-      <details class="catalogue__card" open>
+      <details
+        class="catalogue__card"
+        :open="{ true: opened === 'all' || opened === 'data' }"
+        :class="{ 'catalogue__card--opened': opened === 'data' }"
+      >
         <summary>
           <img
             class="catalogue__card__icon"
@@ -44,7 +51,12 @@
         </ul>
       </details>
 
-      <details class="catalogue__card" open>
+      <details
+        class="catalogue__card"
+        id="details2"
+        :open="{ true: opened === 'all' || opened === 'dev' }"
+        :class="{ 'catalogue__card--opened': opened === 'dev' }"
+      >
         <summary>
           <img
             class="catalogue__card__icon"
@@ -58,7 +70,11 @@
           <li>UX design</li>
         </ul>
       </details>
-      <details class="catalogue__card" open>
+      <details
+        class="catalogue__card"
+        :open="{ true: opened === 'all' || opened === 'seo' }"
+        :class="{ 'catalogue__card--opened': opened === 'seo' }"
+      >
         <summary>
           <img
             class="catalogue__card__icon"
@@ -73,7 +89,12 @@
         </ul>
       </details>
 
-      <details class="catalogue__card">
+      <details
+        class="catalogue__card"
+        id="details3"
+        :open="{ true: opened === 'all' || opened === 'infographie' }"
+        :class="{ 'catalogue__card--opened': opened === 'infographie' }"
+      >
         <summary>
           <img
             class="catalogue__card__icon"
@@ -88,7 +109,11 @@
           <li>Première Pro</li>
         </ul>
       </details>
-      <details class="catalogue__card">
+      <details
+        class="catalogue__card"
+        :open="{ true: opened === 'all' || opened === 'audits' }"
+        :class="{ 'catalogue__card--opened': opened === 'audits' }"
+      >
         <summary>
           <img
             class="catalogue__card__icon"
@@ -96,16 +121,20 @@
           />Audits sécurité
         </summary>
         <ul>
-          <li>ESX</li>
           <li>Matériel Cisco</li>
           <li>Test d'intrusion</li>
-          <li>VOIP (Voix sur IP)</li>
           <li>Système d'information</li>
           <li>Configuration sans-fil</li>
+          <li>ESX et VOIP (Voix sur IP)</li>
         </ul>
       </details>
 
-      <details class="catalogue__card last-wrapper">
+      <details
+        class="catalogue__card last-wrapper"
+        id="details4"
+        :open="{ true: opened === 'all' || opened === 'bdd' }"
+        :class="{ 'catalogue__card--opened': opened === 'bdd' }"
+      >
         <summary>
           <img
             class="catalogue__card__icon"
@@ -116,9 +145,16 @@
           <li>Lorem ipsum dolor sit</li>
           <li>Lorem ipsum dolor sit</li>
           <li>Lorem ipsum dolor sit</li>
+          <li>Lorem ipsum dolor sit</li>
+          <li>Lorem ipsum dolor sit</li>
         </ul>
       </details>
-      <details class="catalogue__card">
+      <details
+        id="reseaux"
+        class="catalogue__card"
+        :open="{ true: opened === 'all' || opened === 'reseaux' }"
+        :class="{ 'catalogue__card--opened': opened === 'reseaux' }"
+      >
         <summary>
           <img
             class="catalogue__card__icon"
@@ -126,6 +162,8 @@
           />Réseaux et maintenance
         </summary>
         <ul>
+          <li>Lorem ipsum dolor sit</li>
+          <li>Lorem ipsum dolor sit</li>
           <li>Lorem ipsum dolor sit</li>
           <li>Lorem ipsum dolor sit</li>
           <li>Lorem ipsum dolor sit</li>
@@ -143,6 +181,16 @@ export default {
   components: {
     CarouselMobile,
     CarouselDesktop,
+  },
+  data() {
+    return {
+      opened: "all",
+    };
+  },
+  methods: {
+    openCard(value) {
+      this.opened = value;
+    },
   },
 };
 </script>
@@ -194,7 +242,7 @@ export default {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: minmax(100px, auto);
-    // align-items: center;
+
     @media (min-width: $tablet) {
       padding: 24px 170px;
       grid-template-columns: repeat(2, 1fr);
@@ -229,6 +277,9 @@ export default {
         gap: 8px;
         font-weight: $light-weight;
         white-space: nowrap;
+      }
+      &--opened {
+        border: yellow solid 2px;
       }
     }
   }

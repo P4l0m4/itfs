@@ -94,14 +94,14 @@ export default {
   //   },
   // },
 
-  mounted() {
-    window.addEventListener("scroll", this.handleScroll);
-  },
-  methods: {
-    handleScroll() {
-      console.log(window.scrollY);
-    },
-  },
+  // mounted() {
+  //   window.addEventListener("scroll", this.handleScroll);
+  // },
+  // methods: {
+  //   handleScroll() {
+  //     console.log(window.scrollY);
+  //   },
+  // },
 };
 </script>
 
