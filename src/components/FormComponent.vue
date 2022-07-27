@@ -143,9 +143,9 @@
       :disabled="isSubmitting"
       :callback="submit"
     >
-      Do something!
+      Envoyer
     </invisible-recaptcha>
-    <p class="form__error" v-if="isSubmitting">Message envoyé</p>
+    <p class="form__error" v-if="isSubmitting">Message envoyé !</p>
   </form>
   <!-- </div> -->
 </template>
@@ -215,6 +215,7 @@ export default {
           this.$refs.form,
           "ZAG2PeOHvH8fTwjpW"
         );
+        this.isSubmitting = true;
         this.isSubmitting = false;
         this.name = "";
         this.firstName = "";
