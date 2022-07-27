@@ -145,7 +145,7 @@
     >
       Envoyer
     </invisible-recaptcha>
-    <p class="form__error" v-if="isSubmitting">Message envoyé !</p>
+    <p class="form__error" v-if="sent">Message envoyé !</p>
   </form>
   <!-- </div> -->
 </template>
@@ -177,6 +177,7 @@ export default {
       age: 0,
       isSubmitting: false,
       // submitStatus: null,
+      sent: false,
     };
   },
   validations: {
@@ -215,7 +216,7 @@ export default {
           this.$refs.form,
           "ZAG2PeOHvH8fTwjpW"
         );
-        this.isSubmitting = true;
+        this.sent = true;
         this.isSubmitting = false;
         this.name = "";
         this.firstName = "";
