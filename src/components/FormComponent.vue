@@ -145,7 +145,7 @@
     >
       Envoyer
     </invisible-recaptcha>
-    <p class="form__error" v-if="sent">Message envoyé !</p>
+    <p class="form__error form__error--sent" v-if="sent">Message envoyé !</p>
   </form>
   <!-- </div> -->
 </template>
@@ -321,11 +321,6 @@ export default {
       width: 100%;
       padding: 8px;
       background: rgb(236, 159, 5);
-      // background: linear-gradient(
-      //   90deg,
-      //   rgba(236, 159, 5, 1) 0%,
-      //   rgba(236, 86, 5, 1) 100%
-      // );
       border-radius: $border-radius;
       color: $tertiary-color;
       font-weight: $button-weight;
@@ -343,6 +338,19 @@ export default {
     &__error {
       font-weight: $light-weight;
       font-size: 12px;
+    }
+    &--sent {
+      display: none;
+      animation: fade 6s linear;
+
+      @keyframes fade {
+        from {
+          display: unset;
+        }
+        to {
+          display: unset;
+        }
+      }
     }
   }
 }
