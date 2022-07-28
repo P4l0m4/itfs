@@ -10,7 +10,12 @@
     >
       <slide :index="0"
         ><div class="slide slide--0">
-          <p class="slide__clickable" @click="scroll('#details', 'data')"></p>
+          <p
+            class="slide__clickable"
+            @click="scroll('#details', 'data')"
+            aria-label="voir les détails sur la formation big data"
+            tabindex="0"
+          ></p>
           <p class="slide__text">Big Data</p>
         </div></slide
       >
@@ -19,25 +24,42 @@
           <p
             class="slide__clickable"
             @click="scroll('#details2', 'audits')"
+            aria-label="voir les détails sur les audits sécurité"
+            tabindex="0"
           ></p>
           <p class="slide__text">Audits sécurité</p>
         </div></slide
       >
       <slide :index="2"
         ><div class="slide slide--2">
-          <p class="slide__clickable" @click="scroll('#details2', 'dev')"></p>
+          <p
+            class="slide__clickable"
+            @click="scroll('#details2', 'dev')"
+            aria-label="voir les détails sur la formation développement web"
+            tabindex="0"
+          ></p>
           <p class="slide__text">Développement Web</p>
         </div></slide
       >
       <slide :index="3"
         ><div class="slide slide--3">
-          <p class="slide__clickable" @click="scroll('#details2', 'seo')"></p>
+          <p
+            class="slide__clickable"
+            @click="scroll('#details2', 'seo')"
+            aria-label="voir les détails sur la formation web marketing et S.E.O"
+            tabindex="0"
+          ></p>
           <p class="slide__text">Web Marketing et SEO</p>
         </div></slide
       >
       <slide :index="4"
         ><div class="slide slide--4">
-          <p class="slide__clickable" @click="scroll('#details3', 'bdd')"></p>
+          <p
+            class="slide__clickable"
+            @click="scroll('#details3', 'bdd')"
+            aria-label="voir les détails sur la formation base de données"
+            tabindex="0"
+          ></p>
           <p class="slide__text">Base de Données</p>
         </div></slide
       >
@@ -46,6 +68,8 @@
           <p
             class="slide__clickable"
             @click="scroll('#details4', 'reseaux')"
+            aria-label="voir les détails sur la formation réseaux et maintenance"
+            tabindex="0"
           ></p>
           <p class="slide__text">Réseaux et maintenance</p>
         </div></slide
@@ -55,6 +79,8 @@
           <p
             class="slide__clickable"
             @click="scroll('#details2', 'infographie')"
+            aria-label="voir les détails sur la formation infographie"
+            tabindex="0"
           ></p>
           <p class="slide__text">Infographie</p>
         </div></slide
@@ -64,6 +90,8 @@
           <p
             class="slide__clickable"
             @click="scroll('#details', 'bureautique')"
+            aria-label="voir les détails sur la formation bureautique"
+            tabindex="0"
           ></p>
           <p class="slide__text">Bureautique</p>
         </div></slide

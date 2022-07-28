@@ -15,7 +15,6 @@
     </div>
 
     <div class="values-block">
-      <!-- <h3 class="values-block__title">Nos valeurs</h3> -->
       <div class="values-block__cubes">
         <div class="values-block__cubes__cube">
           <div class="values-block__cubes__cube__face front">Qualité</div>
@@ -49,25 +48,31 @@
       <p>Nos partenaires</p>
       <div class="partners-block__frames">
         <div class="partners-block__frames__frame">
-          <img src="@/assets/partners/inseec.jpeg" />
+          <img src="@/assets/partners/inseec.jpeg" alt="logo inseec" />
         </div>
         <div class="partners-block__frames__frame">
-          <img src="@/assets/partners/cesni.png" />
+          <img src="@/assets/partners/cesni.png" alt="logo cesni" />
         </div>
         <div class="partners-block__frames__frame">
-          <img src="@/assets/partners/ipac.png" />
+          <img src="@/assets/partners/ipac.png" alt="logo ipac" />
         </div>
         <div class="partners-block__frames__frame">
-          <img src="@/assets/partners/logo-uga.png" />
+          <img
+            src="@/assets/partners/logo-uga.png"
+            alt="logo université grenoble alpes"
+          />
         </div>
         <div class="partners-block__frames__frame">
-          <img src="@/assets/partners/aries.png" />
+          <img src="@/assets/partners/aries.png" alt="logo aries" />
         </div>
         <div class="partners-block__frames__frame">
-          <img src="@/assets/partners/sup2i.png" />
+          <img src="@/assets/partners/sup2i.png" alt="logo sup2i" />
         </div>
         <div class="partners-block__frames__frame">
-          <img src="@/assets/partners/sp-formation.jpg" />
+          <img
+            src="@/assets/partners/sp-formation.jpg"
+            alt="logo sp-formation"
+          />
         </div>
       </div>
     </div>
@@ -79,29 +84,6 @@ export default {
   components: {
     ThreejsPicture,
   },
-  // mounted() {
-  //   this.rotation();
-  // },
-  // methods: {
-  //   rotation() {
-  //     const cube = document.querySelectorAll(".values-block__cubes__cube");
-  //     console.log("function rotation is running");
-  //     window.addEventListener("scroll", function (event) {
-  //       console.log(window.scrollY);
-  //       cube.style.transform = "rotateX(" + window.scrollY + "deg)";
-  //       console.log(event);
-  //     });
-  //   },
-  // },
-
-  // mounted() {
-  //   window.addEventListener("scroll", this.handleScroll);
-  // },
-  // methods: {
-  //   handleScroll() {
-  //     console.log(window.scrollY);
-  //   },
-  // },
 };
 </script>
 
@@ -138,7 +120,6 @@ export default {
     .canvas {
       width: 100%;
       height: 360px;
-      background-color: black;
 
       @media (min-width: $tablet) {
         width: 200px;
@@ -268,34 +249,4 @@ export default {
 .back {
   transform: rotateX(-180deg) translateZ(50px);
 }
-
-// @keyframes spin {
-//   from {
-//     transform: rotateX(0deg);
-//   }
-//   23% {
-//     transform: rotateX(0deg);
-//   }
-//   25% {
-//     transform: rotateX(90deg);
-//   }
-//   48% {
-//     transform: rotateX(90deg);
-//   }
-//   50% {
-//     transform: rotateX(180deg);
-//   }
-//   73% {
-//     transform: rotateX(180deg);
-//   }
-//   75% {
-//     transform: rotateX(270deg);
-//   }
-//   98% {
-//     transform: rotateX(270deg);
-//   }
-//   to {
-//     transform: rotateX(360deg);
-//   }
-// }
 </style>

@@ -94,7 +94,7 @@ export default {
     }
 
     &__icon {
-      width: 44px;
+      width: 40px;
     }
   }
 }

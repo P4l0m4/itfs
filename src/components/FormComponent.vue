@@ -239,12 +239,16 @@ export default {
   .form {
     width: clamp(240px, 100%, 384px);
     background-color: $primary-color;
-    padding: 24px;
-    gap: 24px;
+    padding: 16px;
+    gap: 16px;
     display: flex;
     flex-direction: column;
     position: relative;
     border-radius: $border-radius;
+    @media (min-width: $tablet) {
+      padding: 24px;
+      gap: 24px;
+    }
 
     &__frame {
       z-index: -1;

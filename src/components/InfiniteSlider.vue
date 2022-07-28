@@ -6,44 +6,47 @@
     <!-- <span style="color: #fff">Helo World, I love Vue Infinite Slide Bar</span> -->
     <div class="infinite-slide-bar">
       <div class="infinite-slide-bar__element">
-        <img src="@/assets/icons/vuejs (1).svg" />
+        <img src="@/assets/icons/vuejs (1).svg" alt="icone vuejs" />
         <p>Vue.js</p>
       </div>
       <div class="infinite-slide-bar__element">
-        <img src="@/assets/icons/react.svg" />
+        <img src="@/assets/icons/react.svg" alt="icone reactjs" />
         <p>React.js</p>
       </div>
       <div class="infinite-slide-bar__element">
-        <img src="@/assets/icons/symfony.svg" />
+        <img src="@/assets/icons/symfony.svg" alt="icone symfony" />
         <p>Symfony</p>
       </div>
       <div class="infinite-slide-bar__element">
-        <img src="@/assets/icons/wordpress.svg" />
+        <img src="@/assets/icons/wordpress.svg" alt="icone wordpress" />
         <p>Wordpress</p>
       </div>
       <div class="infinite-slide-bar__element">
-        <img src="@/assets/icons/android.svg" />
+        <img src="@/assets/icons/android.svg" alt="icone android" />
         <p>Android</p>
       </div>
       <div class="infinite-slide-bar__element">
-        <img src="@/assets/icons/apple-ios.svg" />
+        <img src="@/assets/icons/apple-ios.svg" alt="icone ios" />
         <p>IOS</p>
       </div>
       <div class="infinite-slide-bar__element">
-        <img src="@/assets/icons/microsoft-windows.svg" />
+        <img src="@/assets/icons/microsoft-windows.svg" alt="icone windows" />
         <p>Windows</p>
       </div>
       <div class="infinite-slide-bar__element">
-        <img src="@/assets/icons/threejs-logo.svg" />
+        <img src="@/assets/icons/threejs-logo.svg" alt="icone threejs" />
         <p>Three.js</p>
       </div>
       <div class="infinite-slide-bar__element">
-        <img src="@/assets/icons/mysql-icon.svg" />
+        <img src="@/assets/icons/mysql-icon.svg" alt="icone mysql" />
         <p>MySql</p>
       </div>
       <div class="infinite-slide-bar__element">
-        <img src="@/assets/icons/drupal.svg" />
+        <img src="@/assets/icons/drupal.svg" alt="icone drupal" />
         <p>Drupal</p>
+      </div>
+      <div class="infinite-slide-bar__element">
+        <p>PrestaShop</p>
       </div>
     </div>
   </infinite-slide-bar>

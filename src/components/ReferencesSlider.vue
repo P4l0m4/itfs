@@ -7,32 +7,41 @@
       :barStyle="{ background: 'rgb(55, 55,55, 0.8)', padding: '16px 0' }"
     >
       <div class="infinite-slide-bar">
-        <img src="@/assets/references/opinel_logobleu.jpg" />
-        <img src="@/assets/references/inseec.png" />
-        <img src="@/assets/references/ipac.png" />
-        <img src="@/assets/references/gobelin.png" />
-        <img src="@/assets/references/logo-uga.png" />
-        <img src="@/assets/references/sup2i.png" />
-        <img src="@/assets/references/egc.gif" />
-        <img src="@/assets/references/AEC2.png" />
-        <img src="@/assets/references/aries.png" />
-        <img src="@/assets/references/cevoz.png" />
-        <img src="@/assets/references/ciat.gif" />
-        <img src="@/assets/references/csp-beillon.jpg" />
-        <img src="@/assets/references/ikea.png" />
-        <img src="@/assets/references/gabeaute.png" />
-        <img src="@/assets/references/duval.jpg" />
-        <img src="@/assets/references/logo-LFA.png" />
-        <img src="@/assets/references/trigone.png" />
-        <img src="@/assets/references/vicat.png" />
-        <img src="@/assets/references/logo_imail_code.png" />
-        <img src="@/assets/references/ingeos.jpg" />
-        <img src="@/assets/references/areva.png" />
-        <img src="@/assets/references/13bca_blason.png" />
-        <img src="@/assets/references/logo_eurometa.jpg" />
-        <img src="@/assets/references/Logo_La_Teppe.png" />
-        <img src="@/assets/references/logo-sp-formation.png" />
-        <img src="@/assets/references/Photowatt_LogoCouleur.png" />
+        <img src="@/assets/references/opinel_logobleu.jpg" alt="logo opinel" />
+        <img src="@/assets/references/inseec.png" alt="logo inseec" />
+        <img src="@/assets/references/ipac.png" alt="logo ipac" />
+        <img src="@/assets/references/gobelin.png" alt="logo gobelins" />
+        <img
+          src="@/assets/references/logo-uga.png"
+          alt="logo université grenoble"
+        />
+        <img src="@/assets/references/sup2i.png" alt="logo sup2i" />
+        <img src="@/assets/references/egc.gif" alt="logo egc" />
+        <img src="@/assets/references/AEC2.png" alt="logo aec2" />
+        <img src="@/assets/references/aries.png" alt="logo aries" />
+        <img src="@/assets/references/cevoz.png" alt="logo cevoz" />
+        <img src="@/assets/references/ciat.gif" alt="logo ciat" />
+        <img src="@/assets/references/csp-beillon.jpg" alt="logo csp-beillon" />
+        <img src="@/assets/references/ikea.png" alt="logo ikea" />
+        <img src="@/assets/references/gabeaute.png" alt="logo gabeauté" />
+        <img src="@/assets/references/duval.jpg" alt="logo duval" />
+        <img src="@/assets/references/logo-LFA.png" alt="logo lfa" />
+        <img src="@/assets/references/trigone.png" alt="logo trigone" />
+        <img src="@/assets/references/vicat.png" alt="logo vicat" />
+        <img src="@/assets/references/logo_imail_code.png" alt="logo Imail" />
+        <img src="@/assets/references/ingeos.jpg" alt="logo ingeos" />
+        <img src="@/assets/references/areva.png" alt="logo areva" />
+        <img src="@/assets/references/13bca_blason.png" alt="logo 13ème bca" />
+        <img src="@/assets/references/logo_eurometa.jpg" alt="logo eurometa" />
+        <img src="@/assets/references/Logo_La_Teppe.png" alt="logo la teppe" />
+        <img
+          src="@/assets/references/logo-sp-formation.png"
+          alt="logo sp-formation"
+        />
+        <img
+          src="@/assets/references/Photowatt_LogoCouleur.png"
+          alt="logo photowatt"
+        />
       </div>
     </infinite-slide-bar>
   </div>
@@ -89,7 +98,6 @@ export default {
   display: flex;
   gap: 16px;
   opacity: 0.8;
-  background-image: url("@/assets/brick.png");
 
   & img {
     width: 100px;

@@ -19,11 +19,13 @@
         class="catalogue__card"
         :open="opened === 'all' || opened === 'bureautique' ? true : null"
         :class="{ 'catalogue__card--opened': opened === 'bureautique' }"
+        aria-label="voir les détails sur la formation bureautique"
       >
         <summary>
           <img
             class="catalogue__card__icon"
             src="@/assets/icons/monitor.svg"
+            alt="icone bureautique"
           />Bureautique
         </summary>
         <ul>
@@ -37,11 +39,13 @@
         class="catalogue__card"
         :open="opened === 'all' || opened === 'data' ? true : null"
         :class="{ 'catalogue__card--opened': opened === 'data' }"
+        aria-label="voir les détails sur la formation big data"
       >
         <summary>
           <img
             class="catalogue__card__icon"
             src="@/assets/icons/database.svg"
+            alt="icone base de données"
           />Big Data
         </summary>
         <ul>
@@ -57,11 +61,13 @@
         id="details2"
         :open="opened === 'all' || opened === 'dev' ? true : null"
         :class="{ 'catalogue__card--opened': opened === 'dev' }"
+        aria-label="voir les détails sur la formation développement web"
       >
         <summary>
           <img
             class="catalogue__card__icon"
             src="@/assets/icons/code-tags.svg"
+            alt="icone développement web"
           />Développement Web
         </summary>
         <ul>
@@ -75,11 +81,13 @@
         class="catalogue__card"
         :open="opened === 'all' || opened === 'seo' ? true : null"
         :class="{ 'catalogue__card--opened': opened === 'seo' }"
+        aria-label="voir les détails sur la formation web marketing et S.E.O"
       >
         <summary>
           <img
             class="catalogue__card__icon"
             src="@/assets/icons/magnify.svg"
+            alt="icone seo"
           />Web marketing et SEO
         </summary>
         <ul>
@@ -95,11 +103,13 @@
         id="details3"
         :open="opened === 'all' || opened === 'infographie' ? true : null"
         :class="{ 'catalogue__card--opened': opened === 'infographie' }"
+        aria-label="voir les détails sur la formation infographie"
       >
         <summary>
           <img
             class="catalogue__card__icon"
             src="@/assets/icons/draw.svg"
+            alt="icone infographie"
           />Infographie
         </summary>
         <ul>
@@ -114,11 +124,13 @@
         class="catalogue__card"
         :open="opened === 'all' || opened === 'audits' ? true : null"
         :class="{ 'catalogue__card--opened': opened === 'audits' }"
+        aria-label="voir les détails sur les audits sécurité"
       >
         <summary>
           <img
             class="catalogue__card__icon"
             src="@/assets/icons/lock.svg"
+            alt="icone cadenas"
           />Audits sécurité
         </summary>
         <ul>
@@ -135,11 +147,13 @@
         id="details4"
         :open="opened === 'all' || opened === 'bdd' ? true : null"
         :class="{ 'catalogue__card--opened': opened === 'bdd' }"
+        aria-label="voir les détails sur la formation base de données"
       >
         <summary>
           <img
             class="catalogue__card__icon"
             src="@/assets/icons/database.svg"
+            alt="icone base de données"
           />Base de données
         </summary>
         <ul>
@@ -155,11 +169,13 @@
         class="catalogue__card"
         :open="opened === 'all' || opened === 'reseaux' ? true : null"
         :class="{ 'catalogue__card--opened': opened === 'reseaux' }"
+        aria-label="voir les détails sur la formation réseaux et maintenance"
       >
         <summary>
           <img
             class="catalogue__card__icon"
             src="@/assets/icons/wifi.svg"
+            alt="icone réseau wifi"
           />Réseaux et maintenance
         </summary>
         <ul>

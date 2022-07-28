@@ -56,8 +56,8 @@ export default {
     background: rgb(236, 159, 5);
     background: linear-gradient(
       90deg,
-      rgba(236, 159, 5, 0.6) 0%,
-      rgba(236, 86, 5, 0.6) 100%
+      rgba(236, 159, 5, 0.8) 0%,
+      rgba(236, 86, 5, 0.8) 100%
     );
 
     &:nth-child(2) {
@@ -68,7 +68,7 @@ export default {
         rgba(0, 0, 0, 0.4) 100%
       );
       & .button {
-        background-color: #000000;
+        background-color: #0c0c0c;
       }
     }
     .button {
@@ -83,7 +83,7 @@ export default {
       color: $tertiary-color;
       font-weight: $button-weight;
       position: relative;
-      background-color: #945009;
+      background-color: #bf6406;
 
       &:hover > .button__frame {
         z-index: -1;
