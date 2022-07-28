@@ -79,8 +79,8 @@ export default {
       const sizes = {
         // width: window.innerWidth * 0.8,
         // height: window.innerHeight,
-        width: 200,
-        height: 200,
+        width: 240,
+        height: 240,
       };
 
       window.addEventListener("resize", () => {
@@ -108,6 +108,7 @@ export default {
         100
       );
       camera.position.set(4, 4, 4);
+      camera.lookAt(0, 0, 0);
       scene.add(camera);
 
       // Controls

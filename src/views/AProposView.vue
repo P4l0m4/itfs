@@ -2,14 +2,17 @@
   <div id="a-propos">
     <div class="title-container"><h2>A propos</h2></div>
     <div class="horizontal-block">
-      <ThreejsPicture class="canvas" />
       <div class="horizontal-block__text">
+        <div class="map" src="@/assets/map.png" alt="carte itfs"></div>
         <h3 class="horizontal-block__text__title">Qui sommes nous ?</h3>
         <p class="horizontal-block__text__subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi animi
-          modi doloribus veritatis repudiandae earum aliquid corporis, ex
-          tempore, adipisci unde magni voluptate eos eligendi corrupti. Quidem
-          libero architecto alias!
+          ITFS est une entreprise française originaire de la Savoie. Notre
+          objectif : permettre aux passionnés de trouver leur voie et gagner en
+          compétences afin qu'ils s'intègrent durablement au marché du travail.
+          Nous avons à coeur de donner une chance à ceux qui se donnent les
+          moyens de leur réussite afin d'en faire des professionnels qualifiés
+          et aguerris. Dans cette optique, nous proposons de nombreuses
+          formations en lien avec le web et la cybersécurité.
         </p>
       </div>
     </div>
@@ -78,14 +81,7 @@
     </div>
   </div>
 </template>
-<script>
-import ThreejsPicture from "@/components/ThreejsPicture.vue";
-export default {
-  components: {
-    ThreejsPicture,
-  },
-};
-</script>
+<script></script>
 
 <style lang="scss" scoped>
 #a-propos {
@@ -117,13 +113,16 @@ export default {
       width: clamp(240px, 100%, 800px);
     }
 
-    .canvas {
+    .map {
       width: 100%;
       height: 360px;
+      background-image: url("@/assets/map.png");
+      background-position: center bottom;
+      background-size: cover;
+      border-radius: $border-radius;
 
       @media (min-width: $tablet) {
-        width: 200px;
-        height: 240px;
+        width: 100%;
       }
     }
 
@@ -168,11 +167,10 @@ export default {
         position: relative;
         transform-style: preserve-3d;
         transform: rotateX(0deg);
-        // animation: spin 10s linear infinite;
 
         &__face {
           border: $secondary-color solid 2px;
-          background-color: rgba(6, 6, 6, 0.8);
+          background-color: rgba(11, 11, 11, 0.871);
           position: absolute;
           width: 250px;
           height: 100px;
