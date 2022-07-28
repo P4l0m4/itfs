@@ -12,7 +12,10 @@
           Nous avons à coeur de donner une chance à ceux qui se donnent les
           moyens de leur réussite afin d'en faire des professionnels qualifiés
           et aguerris. Dans cette optique, nous proposons de nombreuses
-          formations en lien avec le web et la cybersécurité.
+          formations en lien avec le web et la cybersécurité. Celles-ci sont
+          destinées aux débutants en reconversion professionnelle ou non, mais
+          également à ceux qui souhaitent aller plus loin et développer leurs
+          connaissances.
         </p>
       </div>
     </div>
@@ -48,7 +51,7 @@
       </div>
     </div>
     <div class="partners-block">
-      <p>Nos partenaires</p>
+      <h3>Nos partenaires</h3>
       <div class="partners-block__frames">
         <div class="partners-block__frames__frame">
           <img src="@/assets/partners/inseec.jpeg" alt="logo inseec" />
