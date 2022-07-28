@@ -145,7 +145,6 @@
   }
 
   .values-block {
-    width: 100%;
     padding: 24px;
 
     @media (min-width: $tablet) {
