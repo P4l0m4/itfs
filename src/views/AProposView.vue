@@ -156,7 +156,7 @@
       &__pin {
         position: absolute;
         background-image: url("@/assets/icons/map-marker.svg");
-        width: 200px;
+        width: 140px;
         height: 100px;
         inset: 0 0 0 0;
         margin: auto;

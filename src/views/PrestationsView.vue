@@ -270,13 +270,12 @@ export default {
       grid-template-columns: repeat(4, 1fr);
     }
     &__card {
-      width: 100%;
+      width: clamp(150px, 100%, 500px);
       background-color: $primary-color;
       padding: 16px;
       border-radius: $border-radius;
       cursor: pointer;
       height: fit-content;
-      max-width: 500px;
 
       &__icon {
         width: 20px;
@@ -285,13 +284,9 @@ export default {
       & summary {
         display: flex;
         align-items: center;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        // overflow-wrap: nowrap;
-        white-space: nowrap;
       }
       & ul {
-        padding: 8px;
+        padding: 0 8px;
         list-style: none;
         display: flex;
         flex-direction: column;
