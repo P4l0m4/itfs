@@ -3,9 +3,23 @@
     <div class="title-container"><h2>A propos</h2></div>
     <div class="horizontal-block">
       <div class="horizontal-block__text">
-        <div class="map" src="@/assets/map.png" alt="carte itfs"></div>
-        <h3 class="horizontal-block__text__title">Qui sommes nous ?</h3>
-        <p class="horizontal-block__text__subtitle">
+        <div class="map" src="@/assets/map.png" alt="carte itfs">
+          <div class="map__pin"></div>
+          <div class="map__pin__location">Paris</div>
+          <div class="map__pin__location">Valence</div>
+          <div class="map__pin__location">Grenoble</div>
+          <div class="map__pin__location">St-Etienne</div>
+          <div class="map__pin__location">Annecy</div>
+          <div class="map__pin__location">Chambéry</div>
+          <div class="map__pin__location">Bordeaux</div>
+          <div class="map__pin__location">Montélimar</div>
+          <div class="map__pin__location">Aubagne</div>
+          <div class="map__pin__location">Digne-les-bains</div>
+          <div class="map__pin__location">Aubenas</div>
+          <div class="map__pin__location">Modane</div>
+        </div>
+        <h3 class="horizontal-block__location__title">Qui sommes nous ?</h3>
+        <p class="horizontal-block__location__subtitle">
           ITFS est une entreprise française originaire de la Savoie. Notre
           objectif : permettre aux passionnés de trouver leur voie et gagner en
           compétences afin qu'ils s'intègrent durablement au marché du travail.
@@ -72,13 +86,16 @@
           <img src="@/assets/partners/aries.png" alt="logo aries" />
         </div>
         <div class="partners-block__frames__frame">
-          <img src="@/assets/partners/sup2i.png" alt="logo sup2i" />
+          <img src="@/assets/partners/cci-valence.png" alt="logo cci valence" />
         </div>
         <div class="partners-block__frames__frame">
           <img
-            src="@/assets/partners/sp-formation.jpg"
-            alt="logo sp-formation"
+            src="@/assets/partners/cci-grenoble.jpeg"
+            alt="logo cci grenoble"
           />
+        </div>
+        <div class="partners-block__frames__frame">
+          <img src="@/assets/partners/epsi.svg" alt="logo epsi" />
         </div>
       </div>
     </div>
@@ -118,14 +135,53 @@
 
     .map {
       width: 100%;
+      max-width: 800px;
       height: 360px;
       background-image: url("@/assets/map.png");
       background-position: center bottom;
       background-size: cover;
       border-radius: $border-radius;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding: 16px;
 
       @media (min-width: $tablet) {
         width: 100%;
+      }
+      &__pin {
+        position: absolute;
+        background-image: url("@/assets/icons/map-marker.svg");
+        width: 200px;
+        height: 100px;
+        inset: 0 0 0 0;
+        margin: auto;
+        cursor: pointer;
+        transition: opacity 0.2s linear;
+        transform: rotate(0deg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.2));
+
+        &:hover {
+          opacity: 0.1;
+        }
+        &:hover ~ .map__pin__location {
+          display: unset;
+        }
+
+        &__location {
+          font-weight: $light-weight;
+          display: none;
+          padding: 4px 8px;
+          height: fit-content;
+          border-radius: $border-radius;
+          background-color: $secondary-color;
+        }
       }
     }
 
@@ -197,8 +253,9 @@
       padding: 24px 170px;
     }
 
-    & p {
+    & h3 {
       font-size: 20px;
+      font-weight: $medium-weight;
     }
     &__frames {
       width: 100%;

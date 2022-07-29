@@ -34,14 +34,16 @@
         <img src="@/assets/references/13bca_blason.png" alt="logo 13ème bca" />
         <img src="@/assets/references/logo_eurometa.jpg" alt="logo eurometa" />
         <img src="@/assets/references/Logo_La_Teppe.png" alt="logo la teppe" />
-        <img
-          src="@/assets/references/logo-sp-formation.png"
-          alt="logo sp-formation"
-        />
+        <img src="@/assets/references/cci-valence.png" alt="logo cci valence" />
         <img
           src="@/assets/references/Photowatt_LogoCouleur.png"
           alt="logo photowatt"
         />
+        <img
+          src="@/assets/references/cci-grenoble.jpeg"
+          alt="logo cci grenoble"
+        />
+        <img src="@/assets/references/epsi.svg" alt="logo epsi" />
       </div>
     </infinite-slide-bar>
   </div>

@@ -211,7 +211,7 @@ export default {
 
       if (!this.$v.$invalid) {
         await emailjs.sendForm(
-          "service_f0ns79q",
+          "service_s7u0ilk",
           "template_w7w5617",
           this.$refs.form,
           "ZAG2PeOHvH8fTwjpW"
