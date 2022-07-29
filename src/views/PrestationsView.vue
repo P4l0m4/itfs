@@ -49,10 +49,10 @@
           />Big Data
         </summary>
         <ul>
-          <li>Lorem ipsum dolor sit</li>
-          <li>Lorem ipsum dolor sit</li>
-          <li>Lorem ipsum dolor sit</li>
-          <li>Lorem ipsum dolor sit</li>
+          <li>R + Hadoop</li>
+          <li>Analyse des données</li>
+          <li>Programmation python</li>
+          <li>Modélisation des données</li>
         </ul>
       </details>
 
@@ -71,10 +71,10 @@
           />Développement Web
         </summary>
         <ul>
-          <li>HTML / CSS / JS</li>
-          <li>WordPress</li>
-          <li>PrestaShop</li>
-          <li>UX design</li>
+          <li>HTML | CSS | JS</li>
+          <li>Ajax | Node.js</li>
+          <li>SEO | SEA</li>
+          <li>React.js | Vue.js</li>
         </ul>
       </details>
       <details
@@ -91,10 +91,10 @@
           />Web marketing et SEO
         </summary>
         <ul>
-          <li>Lorem ipsum dolor sit</li>
-          <li>Lorem ipsum dolor sit</li>
-          <li>Lorem ipsum dolor sit</li>
-          <li>Lorem ipsum dolor sit</li>
+          <li>Rédaction web</li>
+          <li>Stratégie marketing</li>
+          <li>Présence sur le web</li>
+          <li>SEO | Google Analytics</li>
         </ul>
       </details>
 
@@ -131,14 +131,14 @@
             class="catalogue__card__icon"
             src="@/assets/icons/lock.svg"
             alt="icone cadenas"
-          />Audits sécurité
+          />cybersécurité
         </summary>
         <ul>
-          <li>Matériel Cisco</li>
-          <li>Test d'intrusion</li>
-          <li>Système d'information</li>
-          <li>Configuration sans-fil</li>
-          <li>ESX et VOIP (Voix sur IP)</li>
+          <li>Sécurité web</li>
+          <li>Droit informatique</li>
+          <li>Sécurité des réseaux</li>
+          <li>Administration réseaux</li>
+          <li>Sécurité bases de données</li>
         </ul>
       </details>
 
@@ -179,11 +179,11 @@
           />Réseaux et maintenance
         </summary>
         <ul>
-          <li>Lorem ipsum dolor sit</li>
-          <li>Lorem ipsum dolor sit</li>
-          <li>Lorem ipsum dolor sit</li>
-          <li>Lorem ipsum dolor sit</li>
-          <li>Lorem ipsum dolor sit</li>
+          <li>Télécom | VPN</li>
+          <li>Sécurité des données</li>
+          <li>Surveillance et audit</li>
+          <li>Administration système</li>
+          <li>Adressage réseau | DNS</li>
         </ul>
       </details>
     </div>
@@ -286,7 +286,7 @@ export default {
         align-items: center;
       }
       & ul {
-        padding: 0 8px;
+        padding: 8px 0;
         list-style: none;
         display: flex;
         flex-direction: column;

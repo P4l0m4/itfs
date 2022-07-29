@@ -23,9 +23,9 @@
           <p
             class="slide__clickable"
             @click="scroll('#details2', 'audits')"
-            aria-label="voir les détails sur les audits sécurité"
+            aria-label="voir les détails sur la formation cybersécurité"
           ></p>
-          <p class="slide__text">Audits sécurité</p>
+          <p class="slide__text">cybersécurité</p>
         </div></slide
       >
       <slide :index="2"
