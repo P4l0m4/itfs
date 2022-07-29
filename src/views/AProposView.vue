@@ -6,6 +6,7 @@
         <div class="map" src="@/assets/map.png" alt="carte itfs">
           <div class="map__pin"></div>
           <div class="map__pin__location">Paris</div>
+          <div class="map__pin__location">Lyon</div>
           <div class="map__pin__location">Valence</div>
           <div class="map__pin__location">Grenoble</div>
           <div class="map__pin__location">St-Etienne</div>

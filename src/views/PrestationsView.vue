@@ -292,7 +292,7 @@ export default {
       }
       & ul {
         padding: 8px;
-        list-style: inside url("@/assets/icons/check.svg");
+        list-style: none;
         display: flex;
         flex-direction: column;
         gap: 8px;
