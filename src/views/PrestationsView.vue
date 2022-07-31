@@ -157,11 +157,11 @@
           />Base de données
         </summary>
         <ul>
-          <li>Lorem ipsum dolor sit</li>
-          <li>Lorem ipsum dolor sit</li>
-          <li>Lorem ipsum dolor sit</li>
-          <li>Lorem ipsum dolor sit</li>
-          <li>Lorem ipsum dolor sit</li>
+          <li>Réalisation Merise</li>
+          <li>MySQL | Access | AGL</li>
+          <li>Analyse sécurité du code</li>
+          <li>Test Alpha, Bêta et débugage</li>
+          <li>Recettage et mise en ligne</li>
         </ul>
       </details>
       <details
