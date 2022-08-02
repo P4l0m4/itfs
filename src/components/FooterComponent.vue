@@ -1,8 +1,6 @@
 <template>
   <div class="footer">
-    <a
-      class="footer__link"
-      href="http://myreader.toile-libre.org/mentionsLegalesITFS.pdf"
+    <a class="footer__link" href="https://docdro.id/w6THdQB"
       >Mentions légales</a
     >
     <p>©ITFS 2022</p>
