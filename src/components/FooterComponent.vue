@@ -4,6 +4,13 @@
       >Mentions légales</a
     >
     <p>©ITFS 2022</p>
+    <a class="footer__link" href="https://www.linkedin.com/company/itfs73/"
+      ><img src="@/assets/icons/linkedin.svg" alt="logo linkedin" /></a
+    ><a
+      class="footer__link"
+      href="https://www.youtube.com/channel/UCAUlgZs6qCHZTuakfl0hWPg"
+      ><img src="@/assets/icons/youtube.svg" alt="logo youtube"
+    /></a>
   </div>
 </template>
 
@@ -32,6 +39,12 @@ export default {
   &__link {
     text-decoration: underline;
     color: $tertiary-color;
+    display: flex;
+    align-items: center;
+    & img {
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 </style>

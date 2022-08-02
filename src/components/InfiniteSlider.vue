@@ -64,7 +64,7 @@ export default {
 <style lang="scss" scoped>
 .infinite-slide-bar {
   display: flex;
-  gap: 8px;
+  gap: 16px;
   &__element {
     display: flex;
     width: 100%;

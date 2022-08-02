@@ -55,9 +55,12 @@ export default {
     background-color: $primary-color;
     display: flex;
     flex-direction: column;
-    padding: 24px;
+    padding: 24px 16px;
     gap: 32px;
     border-radius: $border-radius;
+    @media (min-width: $tablet) {
+      padding: 24px;
+    }
     & ul {
       display: flex;
       flex-direction: column;

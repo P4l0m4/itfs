@@ -71,9 +71,9 @@
           />Développement Web
         </summary>
         <ul>
+          <li>SEO</li>
           <li>HTML | CSS | JS</li>
           <li>Ajax | Node.js</li>
-          <li>SEO | SEA</li>
           <li>React.js | Vue.js</li>
         </ul>
       </details>
