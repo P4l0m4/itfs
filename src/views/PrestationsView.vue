@@ -265,6 +265,8 @@ export default {
 
     @media (min-width: 424px) and (max-width: 539px) {
       grid-template-columns: repeat(1, 1fr);
+      padding: 16px;
+      gap: 16px;
     }
 
     @media (min-width: $desktop) {
