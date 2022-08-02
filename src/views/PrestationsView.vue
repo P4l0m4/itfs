@@ -259,14 +259,11 @@ export default {
     grid-auto-rows: minmax(100px, auto);
 
     @media (min-width: $tablet) {
-      padding: 24px 170px;
       grid-template-columns: repeat(2, 1fr);
     }
 
     @media (min-width: 424px) and (max-width: 539px) {
       grid-template-columns: repeat(1, 1fr);
-      padding: 16px;
-      gap: 16px;
     }
 
     @media (min-width: $desktop) {
