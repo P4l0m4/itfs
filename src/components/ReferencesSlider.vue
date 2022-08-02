@@ -4,7 +4,7 @@
     <div class="scene__land"></div>
     <infinite-slide-bar
       duration="50s"
-      :barStyle="{ background: 'rgb(55, 55,55, 0.8)', padding: '16px 0' }"
+      :barStyle="{ background: 'rgb(55, 55,55, 0.8)', padding: '16px' }"
     >
       <div class="infinite-slide-bar">
         <img src="@/assets/references/opinel_logobleu.jpg" alt="logo opinel" />
@@ -100,6 +100,7 @@ export default {
   display: flex;
   gap: 16px;
   opacity: 0.8;
+  padding-left: 16px;
 
   & img {
     width: 100px;
