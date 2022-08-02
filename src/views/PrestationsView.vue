@@ -1,7 +1,7 @@
 <template>
   <div class="container" id="prestations">
     <div class="title-container">
-      <h2>Formations certifiantes et Audits</h2>
+      <h2>Découvrez nos formations certifiantes</h2>
     </div>
 
     <div class="carousel-mobile">
