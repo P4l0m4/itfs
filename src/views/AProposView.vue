@@ -276,9 +276,9 @@
 
         & img {
           border-radius: $border-radius;
-          width: 100%;
           height: 100%;
           object-fit: cover;
+          width: auto;
         }
       }
     }

@@ -251,8 +251,6 @@ export default {
   }
   .catalogue {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
     padding: 16px;
     gap: 16px;
     justify-content: center;
@@ -263,6 +261,10 @@ export default {
     @media (min-width: $tablet) {
       padding: 24px 170px;
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 424px) and (max-width: 539px) {
+      grid-template-columns: repeat(1, 1fr);
     }
 
     @media (min-width: $desktop) {
