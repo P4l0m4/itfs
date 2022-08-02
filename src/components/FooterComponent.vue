@@ -1,6 +1,10 @@
 <template>
   <div class="footer">
-    <a class="footer__link" href="#">Mentions légales</a>
+    <a
+      class="footer__link"
+      href="http://myreader.toile-libre.org/mentionsLegalesITFS.pdf"
+      >Mentions légales</a
+    >
     <p>©ITFS 2022</p>
   </div>
 </template>
