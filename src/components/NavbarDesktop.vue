@@ -11,10 +11,10 @@
       >
       <a
         class="nav-desktop__link"
-        href="#prestations"
-        :class="{ 'nav-desktop__link--active': link === 'prestations' }"
-        @click="link = 'prestations'"
-        >Prestations</a
+        href="#formations"
+        :class="{ 'nav-desktop__link--active': link === 'formations' }"
+        @click="link = 'formations'"
+        >Formations</a
       >
       <a
         class="nav-desktop__link"

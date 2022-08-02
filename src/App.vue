@@ -4,7 +4,7 @@
     <div class="separator"></div>
     <NavbarDesktop />
     <div class="separator"></div>
-    <PrestationsView />
+    <FormationsView />
     <InfiniteSlider />
     <ContactView />
     <AProposView />
@@ -94,7 +94,7 @@
 <script>
 import NavbarDesktop from "@/components/NavbarDesktop.vue";
 import AccueilView from "./views/AccueilView.vue";
-import PrestationsView from "./views/PrestationsView.vue";
+import FormationsView from "./views/FormationsView.vue";
 import InfiniteSlider from "@/components/InfiniteSlider.vue";
 import ContactView from "./views/ContactView.vue";
 import AProposView from "./views/AProposView.vue";
@@ -105,7 +105,7 @@ export default {
   components: {
     NavbarDesktop,
     AccueilView,
-    PrestationsView,
+    FormationsView,
     InfiniteSlider,
     ContactView,
     AProposView,

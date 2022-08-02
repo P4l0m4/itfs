@@ -1,5 +1,5 @@
 <template>
-  <div class="container" id="prestations">
+  <div class="container" id="formations">
     <div class="title-container">
       <h2>Découvrez nos formations certifiantes</h2>
     </div>
@@ -194,7 +194,7 @@
 import CarouselMobile from "@/components/CarouselMobile.vue";
 import CarouselDesktop from "@/components/CarouselDesktop.vue";
 export default {
-  name: "PrestationsView",
+  name: "FormationsView",
   components: {
     CarouselMobile,
     CarouselDesktop,

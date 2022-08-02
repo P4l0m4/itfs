@@ -9,8 +9,8 @@
     </div>
     <div class="parts">
       <div class="parts__part">
-        <a class="button" href="#prestations"
-          >Formations et Prestations
+        <a class="button" href="#formations"
+          >Nos formations
           <div class="button__frame"></div
         ></a>
       </div>
