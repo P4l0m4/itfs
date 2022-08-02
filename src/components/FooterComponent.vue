@@ -25,6 +25,7 @@ export default {
     justify-content: flex-end;
     gap: 16px;
     margin-bottom: unset;
+    padding-right: 100px;
   }
   &__link {
     text-decoration: underline;
