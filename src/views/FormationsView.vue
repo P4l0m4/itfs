@@ -131,7 +131,7 @@
             class="catalogue__card__icon"
             src="@/assets/icons/lock.svg"
             alt="icone cadenas"
-          />cybersécurité
+          />Cybersécurité
         </summary>
         <ul>
           <li>Sécurité web</li>
