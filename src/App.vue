@@ -135,7 +135,7 @@ export default {
   .separator {
     width: 100vw;
     height: 24px;
-    background-color: rgb(0, 0, 0, 0.4);
+    background-color: rgb(0, 0, 0, 0.6);
     display: none;
     @media (min-width: $desktop) {
       display: block;
