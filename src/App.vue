@@ -218,6 +218,7 @@ export default {
       font-weight: 100;
       font-size: 20px;
       background-color: rgb(30, 30, 30, 0.5);
+      padding: 0 8px;
     }
   }
 }
