@@ -113,18 +113,6 @@ export default {
     NavbarMobile,
     FooterComponent,
   },
-  data() {
-    return {
-      // toggleNavbar: false,
-      // toggleFooter: true,
-    };
-  },
-
-  methods: {
-    // toggle(bool) {
-    //   this.toggleNavbar = bool;
-    // },
-  },
 };
 </script>
 <style lang="scss" scoped>

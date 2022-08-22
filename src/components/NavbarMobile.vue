@@ -14,9 +14,9 @@
       >
       <a
         class="nav-mobile__link"
-        href="#prestations"
-        :class="{ 'nav-mobile__link--active': link === 'prestations' }"
-        @click="link = 'prestations'"
+        href="#formations"
+        :class="{ 'nav-mobile__link--active': link === 'formations' }"
+        @click="link = 'formations'"
         ><img
           class="nav-mobile__link__icon"
           src="@/assets/icons/school-outline.svg"
