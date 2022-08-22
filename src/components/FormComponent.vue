@@ -137,7 +137,7 @@
 
     <invisible-recaptcha
       sitekey="	
-6LeoKU4hAAAAAIpMuWb2aTDBXL3q4D5Pt1tyFrna"
+6Lfjy5khAAAAAIvHu36SJioZ0GmVjjGiNDAsVM7o"
       class="form__button"
       type="submit"
       :disabled="isSubmitting"
