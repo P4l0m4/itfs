@@ -2,7 +2,7 @@
   <div class="footer">
     <a
       class="footer__link"
-      href="https://docdro.id/QH9YqbC"
+      href="https://docdro.id/linZ1mu"
       aria-label="consulter les mentions légales"
       >Mentions légales</a
     >

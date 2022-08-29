@@ -20,7 +20,7 @@
         ><img
           class="nav-mobile__link__icon"
           src="@/assets/icons/school-outline.svg"
-        />Prestations</a
+        />Formations</a
       >
       <a
         class="nav-mobile__link"

@@ -6,15 +6,14 @@
       <ul>
         <li>06 17 03 34 30</li>
         <li>
-          77 chemin des Cattis 73290<br />
-          LA MOTTE SERVOLEX
+          Route des Vaisselets 73170
+          <br />
+          SAINT-PAUL
         </li>
         <li>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2790.8946176110803!2d5.840313715435519!3d45.61276167910297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b0862d14da5b3%3A0xc1d509f20ee81209!2s77%20Chem.%20de%20Cattis%2C%2073290%20La%20Motte-Servolex!5e0!3m2!1sfr!2sfr!4v1658756283944!5m2!1sfr!2sfr"
             style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </li>
