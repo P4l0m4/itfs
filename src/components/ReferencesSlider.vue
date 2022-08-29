@@ -23,6 +23,15 @@
         <img src="@/assets/references/ciat.gif" alt="logo ciat" />
         <img src="@/assets/references/csp-beillon.jpg" alt="logo csp-beillon" />
         <img src="@/assets/references/ikea.png" alt="logo ikea" />
+        <img src="@/assets/references/air-france.png" alt="logo air france" />
+        <img
+          src="@/assets/references/france-telecom.png"
+          alt="logo france telecom"
+        />
+        <img
+          src="@/assets/references/suites-du-lac.png"
+          alt="logo les suites du lac"
+        />
         <img src="@/assets/references/gabeaute.png" alt="logo gabeauté" />
         <img src="@/assets/references/duval.jpg" alt="logo duval" />
         <img src="@/assets/references/logo-LFA.png" alt="logo lfa" />
