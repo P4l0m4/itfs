@@ -12,8 +12,7 @@
         </li>
         <li>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2790.8946176110803!2d5.840313715435519!3d45.61276167910297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b0862d14da5b3%3A0xc1d509f20ee81209!2s77%20Chem.%20de%20Cattis%2C%2073290%20La%20Motte-Servolex!5e0!3m2!1sfr!2sfr!4v1658756283944!5m2!1sfr!2sfr"
-            style="border: 0"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44605.85605461652!2d5.76116571660767!3d45.67359025047067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b0f4ebc787b7b%3A0xaeff75bea9c6a6b7!2sITFS!5e0!3m2!1sfr!2sfr!4v1661859500624!5m2!1sfr!2sfr"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </li>
