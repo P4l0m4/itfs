@@ -19,7 +19,7 @@
         <img src="@/assets/references/egc.gif" alt="logo egc" />
         <img src="@/assets/references/AEC2.png" alt="logo aec2" />
         <img src="@/assets/references/aries.png" alt="logo aries" />
-        <img src="@/assets/references/cevoz.png" alt="logo cevoz" />
+        <!-- <img src="@/assets/references/cevoz.png" alt="logo cevoz" /> -->
         <img src="@/assets/references/ciat.gif" alt="logo ciat" />
         <img src="@/assets/references/csp-beillon.jpg" alt="logo csp-beillon" />
         <img src="@/assets/references/ikea.png" alt="logo ikea" />
@@ -32,7 +32,7 @@
           src="@/assets/references/suites-du-lac.png"
           alt="logo les suites du lac"
         />
-        <img src="@/assets/references/gabeaute.png" alt="logo gabeauté" />
+        <!-- <img src="@/assets/references/gabeaute.png" alt="logo gabeauté" /> -->
         <img src="@/assets/references/duval.jpg" alt="logo duval" />
         <img src="@/assets/references/logo-LFA.png" alt="logo lfa" />
         <img src="@/assets/references/trigone.png" alt="logo trigone" />
@@ -41,8 +41,8 @@
         <img src="@/assets/references/ingeos.jpg" alt="logo ingeos" />
         <img src="@/assets/references/areva.png" alt="logo areva" />
         <img src="@/assets/references/13bca_blason.png" alt="logo 13ème bca" />
-        <img src="@/assets/references/logo_eurometa.jpg" alt="logo eurometa" />
-        <img src="@/assets/references/Logo_La_Teppe.png" alt="logo la teppe" />
+        <!-- <img src="@/assets/references/logo_eurometa.jpg" alt="logo eurometa" />
+        <img src="@/assets/references/Logo_La_Teppe.png" alt="logo la teppe" /> -->
         <img src="@/assets/references/cci-valence.png" alt="logo cci valence" />
         <img
           src="@/assets/references/Photowatt_LogoCouleur.png"

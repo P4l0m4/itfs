@@ -69,34 +69,77 @@
       <h3>Nos partenaires</h3>
       <div class="partners-block__frames">
         <div class="partners-block__frames__frame">
-          <img src="@/assets/partners/inseec.jpeg" alt="logo inseec" />
+          <a
+            href="https://www.inseec.com/"
+            aria-label="voir le site de l'Inseec"
+          >
+            <img src="@/assets/partners/inseec.jpeg" alt="logo inseec"
+          /></a>
         </div>
         <div class="partners-block__frames__frame">
-          <img src="@/assets/partners/cesni.png" alt="logo cesni" />
+          <a
+            href="https://www.inseec.com/specialisation-sport/"
+            aria-label="voir le site de la Cesni"
+          >
+            <img src="@/assets/partners/cesni.png" alt="logo cesni"
+          /></a>
         </div>
         <div class="partners-block__frames__frame">
-          <img src="@/assets/partners/ipac.png" alt="logo ipac" />
+          <a
+            href="https://www.ipac-france.com/"
+            aria-label="voir le site de l'IPAC"
+          >
+            <img src="@/assets/partners/ipac.png" alt="logo ipac"
+          /></a>
         </div>
         <div class="partners-block__frames__frame">
-          <img
-            src="@/assets/partners/logo-uga.png"
-            alt="logo université grenoble alpes"
-          />
+          <a
+            href="https://www.univ-grenoble-alpes.fr/"
+            aria-label="voir le site de l'université grenoble alpes"
+          >
+            <img
+              src="@/assets/partners/logo-uga.png"
+              alt="logo université grenoble alpes"
+          /></a>
         </div>
         <div class="partners-block__frames__frame">
-          <img src="@/assets/partners/aries.png" alt="logo aries" />
+          <a
+            href="https://www.brassart.fr/"
+            aria-label="voir le site de l'école Aries"
+          >
+            <img src="@/assets/partners/aries.png" alt="logo aries"
+          /></a>
         </div>
         <div class="partners-block__frames__frame">
-          <img src="@/assets/partners/cci-valence.png" alt="logo cci valence" />
+          <a
+            href="https://www.drome.cci.fr/acces-cci-de-la-drome"
+            aria-label="voir le site de la CCI de Valence"
+          >
+            <img src="@/assets/partners/cci-valence.png" alt="logo cci valence"
+          /></a>
         </div>
         <div class="partners-block__frames__frame">
-          <img
-            src="@/assets/partners/cci-grenoble.jpeg"
-            alt="logo cci grenoble"
-          />
+          <a
+            href="https://www.grenoble.cci.fr/"
+            aria-label="voir le site de la CCI de Grenoble"
+          >
+            <img
+              src="@/assets/partners/cci-grenoble.jpeg"
+              alt="logo cci grenoble"
+          /></a>
         </div>
         <div class="partners-block__frames__frame">
-          <img src="@/assets/partners/epsi.svg" alt="logo epsi" />
+          <a href="https://www.epsi.fr/" aria-label="voir le site de l'Epsi">
+            <img src="@/assets/partners/epsi.svg" alt="logo epsi"
+          /></a>
+        </div>
+        <div class="partners-block__frames__frame">
+          <a
+            href="https://www.designbyzen.fr/"
+            aria-label="voir le site designbyzen.fr"
+          >
+            <img src="@/assets/partners/designbyzen.png" alt="logo designbyzen"
+          /></a>
         </div>
       </div>
     </div>
