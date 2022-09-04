@@ -3,7 +3,7 @@
     <div class="title-container"><h2>A propos</h2></div>
     <div class="horizontal-block">
       <div class="horizontal-block__text">
-        <div class="map" src="@/assets/map.png" alt="carte itfs">
+        <div class="map">
           <div class="map__pin"></div>
           <div class="map__pin__location">Paris</div>
           <div class="map__pin__location">Lyon</div>
@@ -139,6 +139,14 @@
             aria-label="voir le site designbyzen.fr"
           >
             <img src="@/assets/partners/designbyzen.png" alt="logo designbyzen"
+          /></a>
+        </div>
+        <div class="partners-block__frames__frame">
+          <a
+            href="https://insermatik.fr/"
+            aria-label="voir le site insermatik.fr"
+          >
+            <img src="@/assets/partners/insermatik.png" alt="logo insermatik"
           /></a>
         </div>
       </div>

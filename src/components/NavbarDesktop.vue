@@ -1,7 +1,14 @@
 <template>
   <div class="navbar">
     <nav class="nav-desktop">
-      <a href="#accueil"><LogoThreejs class="nav-desktop__logo" /> </a>
+      <!-- <a href="#accueil"><LogoThreejs class="nav-desktop__logo" /> </a> -->
+      <a href="#accueil"
+        ><img
+          class="nav-desktop__logo"
+          src="@/assets/logo-flat.svg"
+          alt="ITFS logo"
+        />
+      </a>
       <a
         class="nav-desktop__link"
         href="#accueil"
@@ -34,7 +41,7 @@
   </div>
 </template>
 <script>
-import LogoThreejs from "@/components/LogoThreejs.vue";
+// import LogoThreejs from "@/components/LogoThreejs.vue";
 export default {
   name: "NavbarDesktop",
   props: {
@@ -51,7 +58,7 @@ export default {
   },
 
   components: {
-    LogoThreejs,
+    // LogoThreejs,
   },
   methods: {
     // toggle() {
@@ -85,8 +92,8 @@ export default {
   }
 
   &__logo {
-    width: 80px !important;
-    height: 70px !important;
+    width: 60px;
+    height: 60px;
     @media (min-width: 424px) {
       display: none;
     }
