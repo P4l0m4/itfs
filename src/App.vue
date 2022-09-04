@@ -102,7 +102,7 @@ import AProposView from "./views/AProposView.vue";
 import ReferencesSlider from "@/components/ReferencesSlider.vue";
 import NavbarMobile from "@/components/NavbarMobile.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
-import JsonLD from "@/components/JsonLD.old.vue";
+import JsonLD from "@/components/JsonLD.vue";
 export default {
   components: {
     NavbarDesktop,
