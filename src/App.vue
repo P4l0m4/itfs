@@ -102,7 +102,7 @@ import AProposView from "./views/AProposView.vue";
 import ReferencesSlider from "@/components/ReferencesSlider.vue";
 import NavbarMobile from "@/components/NavbarMobile.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
-import JsonLD from "@/components/JsonLD.vue";
+import JsonLD from "@/components/JsonLD.old.vue";
 export default {
   components: {
     NavbarDesktop,
@@ -123,6 +123,8 @@ export default {
   width: 100vw;
   height: 100vh;
   overflow: auto;
+  scroll-behavior: smooth;
+
   .separator {
     width: 100vw;
     height: 24px;
