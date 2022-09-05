@@ -10,6 +10,7 @@
         <img
           class="nav-mobile__link__icon"
           src="@/assets/icons/home.svg"
+          alt="icone menu accueil"
         />Accueil</a
       >
       <a
@@ -20,6 +21,7 @@
         ><img
           class="nav-mobile__link__icon"
           src="@/assets/icons/school-outline.svg"
+          alt="icone menu formations"
         />Formations</a
       >
       <a
@@ -30,6 +32,7 @@
         ><img
           class="nav-mobile__link__icon"
           src="@/assets/icons/send-outline.svg"
+          alt="icone menu contact"
         />Contact</a
       >
       <a
@@ -40,6 +43,7 @@
         ><img
           class="nav-mobile__link__icon"
           src="@/assets/icons/information-outline.svg"
+          alt="icone menu à propos"
         />A propos</a
       >
     </nav>
