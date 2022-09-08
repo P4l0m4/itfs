@@ -72,6 +72,7 @@
           <a
             href="https://www.inseec.com/"
             aria-label="voir le site de l'Inseec"
+            target="_blank"
           >
             <img src="@/assets/partners/inseec.jpeg" alt="logo inseec"
           /></a>
@@ -80,6 +81,7 @@
           <a
             href="https://www.inseec.com/specialisation-sport/"
             aria-label="voir le site de la Cesni"
+            target="_blank"
           >
             <img src="@/assets/partners/cesni.png" alt="logo cesni"
           /></a>
@@ -88,6 +90,7 @@
           <a
             href="https://www.ipac-france.com/"
             aria-label="voir le site de l'IPAC"
+            target="_blank"
           >
             <img src="@/assets/partners/ipac.png" alt="logo ipac"
           /></a>
@@ -96,6 +99,7 @@
           <a
             href="https://www.univ-grenoble-alpes.fr/"
             aria-label="voir le site de l'université grenoble alpes"
+            target="_blank"
           >
             <img
               src="@/assets/partners/logo-uga.png"
@@ -106,6 +110,7 @@
           <a
             href="https://www.brassart.fr/"
             aria-label="voir le site de l'école Aries"
+            target="_blank"
           >
             <img src="@/assets/partners/aries.png" alt="logo aries"
           /></a>
@@ -114,6 +119,7 @@
           <a
             href="https://www.drome.cci.fr/acces-cci-de-la-drome"
             aria-label="voir le site de la CCI de Valence"
+            target="_blank"
           >
             <img src="@/assets/partners/cci-valence.png" alt="logo cci valence"
           /></a>
@@ -122,6 +128,7 @@
           <a
             href="https://www.grenoble.cci.fr/"
             aria-label="voir le site de la CCI de Grenoble"
+            target="_blank"
           >
             <img
               src="@/assets/partners/cci-grenoble.jpeg"
@@ -137,6 +144,7 @@
           <a
             href="https://www.designbyzen.fr/"
             aria-label="voir le site designbyzen.fr"
+            target="_blank"
           >
             <img src="@/assets/partners/designbyzen.png" alt="logo designbyzen"
           /></a>
@@ -144,6 +152,7 @@
         <div class="partners-block__frames__frame">
           <a
             href="https://insermatik.fr/"
+            target="_blank"
             aria-label="voir le site insermatik.fr"
           >
             <img src="@/assets/partners/insermatik.png" alt="logo insermatik"
