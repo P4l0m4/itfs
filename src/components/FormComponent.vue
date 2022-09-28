@@ -131,11 +131,18 @@
         Ce champ est requis
       </div>
     </div>
-    <!-- <button class="form__button" type="submit" :disabled="isSubmitting">
-      Envoyer
-    </button> -->
 
-    <invisible-recaptcha
+    <input
+      type="checkbox"
+      class="HP"
+      id="HP"
+      name="not_a_robot"
+      v-model="HP"
+      @change="checkIfHP"
+    />
+    <label for="HP" class="HP"> Je ne suis pas un robot </label>
+
+    <!-- <invisible-recaptcha
       sitekey="	
 6Lfjy5khAAAAAIvHu36SJioZ0GmVjjGiNDAsVM7o"
       class="form__button"
@@ -144,7 +151,17 @@
       :callback="submit"
     >
       Envoyer
-    </invisible-recaptcha>
+    </invisible-recaptcha> -->
+
+    <button
+      class="form__button"
+      type="submit"
+      :disabled="isSubmitting"
+      :callback="submit"
+    >
+      Envoyer
+    </button>
+
     <p class="form__error" v-if="sent">Message envoyé !</p>
   </form>
   <!-- </div> -->
@@ -160,13 +177,13 @@ import {
   alpha,
 } from "vuelidate/lib/validators";
 import emailjs from "@emailjs/browser";
-import InvisibleRecaptcha from "vue-invisible-recaptcha";
+// import InvisibleRecaptcha from "vue-invisible-recaptcha";
 
 export default {
   name: "FormComponent",
-  components: {
-    "invisible-recaptcha": InvisibleRecaptcha,
-  },
+  // components: {
+  //   "invisible-recaptcha": InvisibleRecaptcha,
+  // },
   data() {
     return {
       name: "",
@@ -178,6 +195,7 @@ export default {
       isSubmitting: false,
       // submitStatus: null,
       sent: false,
+      HP: false,
     };
   },
   validations: {
@@ -210,12 +228,15 @@ export default {
       this.$v.$touch();
 
       if (!this.$v.$invalid) {
-        await emailjs.sendForm(
-          "service_s7u0ilk",
-          "template_w7w5617",
-          this.$refs.form,
-          "ZAG2PeOHvH8fTwjpW"
-        );
+        if (this.HP === false) {
+          await emailjs.sendForm(
+            "service_s7u0ilk",
+            "template_w7w5617",
+            this.$refs.form,
+            "ZAG2PeOHvH8fTwjpW"
+          );
+        }
+
         this.sent = true;
         this.isSubmitting = false;
         this.name = "";
@@ -225,6 +246,9 @@ export default {
         this.rgpd = false;
         this.$v.$reset();
       }
+    },
+    checkIfHP() {
+      console.log("honey " + this.HP);
     },
   },
 };
@@ -343,6 +367,9 @@ export default {
       font-weight: $light-weight;
       font-size: 12px;
     }
+  }
+  .HP {
+    display: none;
   }
 }
 </style>
