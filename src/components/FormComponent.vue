@@ -75,7 +75,7 @@
         Ce champ est requis
       </div>
 
-      <div class="form__error" v-else-if="$v.email.$error && !$v.email.eùaom">
+      <div class="form__error" v-else-if="$v.email.$error && !$v.email.email">
         Veuillez renseigner un email valide
       </div>
     </div>
